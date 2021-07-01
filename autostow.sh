@@ -20,7 +20,7 @@ CONFIG_PKG=(
 CONFIG_INDEP_PKG=(
     alacritty
     vim
-    joplin
+    #joplin
     plasma-workspace
     autostart
     bspwm
