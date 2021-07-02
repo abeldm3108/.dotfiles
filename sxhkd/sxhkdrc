@@ -17,6 +17,8 @@ super + shift + e
 control + alt + f
 	firefox
 
+control + alt + w
+	whatsdesk
 #  ------ brightness  -------- # 
 
 XF86MonBrightnessUp

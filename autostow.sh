@@ -6,6 +6,7 @@ HOME_PKG=(
     xinit
     bash
 	vim
+	zsh
 )
 
 HOME_INDEP_PKG=(
