@@ -5,6 +5,7 @@ HOME_PKG=(
     git
     xinit
     bash
+	vim
 )
 
 HOME_INDEP_PKG=(
@@ -19,7 +20,7 @@ CONFIG_PKG=(
 # packages going to $CONFIG/<package-name>
 CONFIG_INDEP_PKG=(
     alacritty
-    vim
+    #nvim
     #joplin
     plasma-workspace
     autostart

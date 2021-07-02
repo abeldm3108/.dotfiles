@@ -1,4 +1,4 @@
-source ~/.config/nvim/plugins.vim
+source ~/.dotfiles/vim/plugins.vim
 syntax enable
 colorscheme delek
 set clipboard=unnamed
@@ -7,6 +7,13 @@ set relativenumber
 set linebreak
 set showbreak=+++
 set tabstop=4
+	
+noremap ñ l
+noremap l j
+noremap j h
+noremap k k
+	
+
 " set textwidth=50
 " set showmatch
 " set visualbell

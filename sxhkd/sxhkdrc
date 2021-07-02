@@ -14,7 +14,7 @@ super + shift + r
 super + shift + e
         bspc wm -r
 
-alt + control + f
+control + alt + f
 	firefox
 
 #  ------ brightness  -------- # 
