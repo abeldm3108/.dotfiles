@@ -103,16 +103,16 @@ super + {o,i}
 # preselect ( select the direction you want the window to be opened in )
 
 # preselect the direction
-super + ctrl + {j,k,l,ntilde}
-	bspc node -p {west,north,south,east}
+#super + ctrl + {j,k,l,ntilde}
+#	bspc node -p {west,north,south,east}
 
 # preselect the ratio
-super + ctrl + {1-9}
-	bspc node -o 0.{1-9}
+#super + ctrl + {1-9}
+#	bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
-super + ctrl + space
-	bspc node -p cancel
+#super + ctrl + space
+#	bspc node -p cancel
 
 # cancel the preselection for the focused desktop
 super + ctrl + shift + space

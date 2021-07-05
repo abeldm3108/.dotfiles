@@ -28,6 +28,7 @@ CONFIG_INDEP_PKG=(
     bspwm
     sxhkd
     polybar
+	compton
 )
 
 # given a value and an array, returns if contained

@@ -12,7 +12,6 @@ noremap ñ l
 noremap l j
 noremap j h
 noremap k k
-	
 
 " set textwidth=50
 " set showmatch

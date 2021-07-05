@@ -1,10 +1,10 @@
 #! /bin/sh
-
+#AUTOSTART
 sxhkd &
+compton &
+#~/.config/polybar/launch.sh &
+setxkbmap -option caps:swapescape &
 
-# polybar
-
-~/.config/polybar/launch.sh &
 
 # compositing and wallpaper 
 
