@@ -9,7 +9,9 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+alias updtzsh="source ~/.zshrc"
 alias ll="ls -a"
 alias ..="cd .."
 alias zrc="source ~/.zshrc"
 alias autostow="(cd ~/.dotfiles; ~/.dotfiles/autostow.sh)"
+
