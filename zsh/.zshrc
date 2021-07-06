@@ -15,3 +15,12 @@ alias ..="cd .."
 alias zrc="source ~/.zshrc"
 alias autostow="(cd ~/.dotfiles; ~/.dotfiles/autostow.sh)"
 
+
+#Aliases for edit dotfiles
+alias zshrcedit="vim ~/.dotfiles/zsh/.zshrc"
+alias alacrittyedit="vim ~/.dotfiles/alacritty/alacritty.yml"
+alias vimrcedit="vim ~/.dotfiles/vim/.vimrc"
+alias bspwmrcedit="vim ~/.dotfiles/bspwm/bspwmrc"
+alias sxhkdrcedit="vim ~/.dotfiles/sxhkd/sxhkdrc"
+alias picomedit="vim ~/.dotfiles/picom/picom.conf"
+alias xinitrcedit="vim ~/.dotfiles/xinit/.xinitrc"
