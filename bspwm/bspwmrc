@@ -1,7 +1,8 @@
 #! /bin/sh
 #AUTOSTART
 sxhkd &
-compton &
+picom &
+feh --bg-fill ~/.dotfiles/wallpapers/stars.jpg &
 #~/.config/polybar/launch.sh &
 setxkbmap -option caps:swapescape &
 

@@ -15,6 +15,9 @@ super + Return
 	alacritty	
 
 control + alt + f
+	dolphin
+
+control + alt + b
 	firefox
 
 control + alt + w

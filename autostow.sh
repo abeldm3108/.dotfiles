@@ -29,6 +29,7 @@ CONFIG_INDEP_PKG=(
     sxhkd
     polybar
 	compton
+	picom
 )
 
 # given a value and an array, returns if contained
