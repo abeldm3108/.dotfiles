@@ -118,13 +118,13 @@ super + {o,i}
 #	bspc node -p cancel
 
 # cancel the preselection for the focused desktop
-super + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+#super + ctrl + shift + space
+#	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 # move/resize
 
 # expand a window by moving one of its side outward
-super + alt + shift + {j,k,l,ntilde}
+super + ctrl + {j,k,l,ntilde}
 	bspc node -z {left -20 0,top 0 -20,top 0 20,left 20 0}
 
 # contract a window by moving one of its side inward

@@ -14,7 +14,7 @@ alias ll="ls -a"
 alias ..="cd .."
 alias zrc="source ~/.zshrc"
 alias autostow="(cd ~/.dotfiles; ~/.dotfiles/autostow.sh)"
-
+alias gitdf='cd ~/.dotfiles & git add --all & git commit -m "minor changes"' # & git push --all'
 
 #Aliases for edit dotfiles
 alias zshrcedit="vim ~/.dotfiles/zsh/.zshrc"

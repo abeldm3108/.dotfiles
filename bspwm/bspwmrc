@@ -2,7 +2,7 @@
 #AUTOSTART
 sxhkd &
 picom &
-feh --bg-fill ~/.dotfiles/wallpapers/stars.jpg &
+feh --bg-fill ~/.dotfiles/wallpapers/circles.jpg &
 #~/.config/polybar/launch.sh &
 setxkbmap -option caps:swapescape &
 
