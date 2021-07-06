@@ -21,10 +21,8 @@ CONFIG_PKG=(
 # packages going to $CONFIG/<package-name>
 CONFIG_INDEP_PKG=(
     alacritty
-    #nvim
-    #joplin
     plasma-workspace
-    autostart
+    #autostart
     bspwm
     sxhkd
     polybar

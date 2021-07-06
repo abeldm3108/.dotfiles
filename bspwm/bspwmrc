@@ -3,15 +3,14 @@
 sxhkd &
 picom &
 feh --bg-fill ~/.dotfiles/wallpapers/circles.jpg &
-#~/.config/polybar/launch.sh &
 setxkbmap -option caps:swapescape &
 
 
 # compositing and wallpaper 
 
-picom & 
-feh --bg-fill ~/Pictures/wall/gruv.png &
 xrdb merge ~/.Xresources &  # (terminal theme)
+
+$HOME/.config/polybar/launch.sh
 
 bspc monitor -d I II III IV V VI VII
 
