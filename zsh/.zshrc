@@ -24,3 +24,6 @@ alias bspwmrcedit="vim ~/.dotfiles/bspwm/bspwmrc"
 alias sxhkdrcedit="vim ~/.dotfiles/sxhkd/sxhkdrc"
 alias picomedit="vim ~/.dotfiles/picom/picom.conf"
 alias xinitrcedit="vim ~/.dotfiles/xinit/.xinitrc"
+
+#Programs
+alias chrome="/opt/google/chrome/chrome"

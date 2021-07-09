@@ -28,6 +28,7 @@ CONFIG_INDEP_PKG=(
     polybar
 	compton
 	picom
+	zathura
 )
 
 # given a value and an array, returns if contained
