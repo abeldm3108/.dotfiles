@@ -9,6 +9,8 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+bindkey '^@'      autosuggest-accept
+
 alias updtzsh="source ~/.zshrc"
 alias ll="ls -a"
 alias ..="cd .."

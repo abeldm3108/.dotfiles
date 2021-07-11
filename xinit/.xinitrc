@@ -69,3 +69,4 @@ exec $(get_session "$1")
 sxhkd &
 urxvt &
 exec bspwm
+xset r rate 660 25

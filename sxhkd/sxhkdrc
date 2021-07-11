@@ -28,14 +28,18 @@ control + alt + f
 control + alt + b
 	google-chrome-stable
 
-control + alt + w
-	whatsdesk
-
 control + alt + s
 	systemsettings5
 
 control + alt + g
 	gimp	
+
+control + alt + c
+	clickup
+
+control + alt + w
+	whatsapp-nativefier
+
 #  ------ keys  -------- # 
 
 XF86MonBrightnessUp

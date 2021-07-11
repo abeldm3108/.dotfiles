@@ -38,6 +38,7 @@ bspc config gapless_monocle      true
 
 bspc rule -a gimp desktop='^5' state=floating follow=on
 bspc rule -a google-chrome-stable desktop='^2' follow=on
+bspc rule -a clickup desktop='^7' follow=off
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
