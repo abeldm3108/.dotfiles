@@ -144,3 +144,5 @@ if [ -f ~/.dotfiles/bash/.bash_aliases ]; then
 fi
 
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

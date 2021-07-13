@@ -29,3 +29,5 @@ alias xinitrcedit="vim ~/.dotfiles/xinit/.xinitrc"
 
 #Programs
 alias chrome="/opt/google/chrome/chrome"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
