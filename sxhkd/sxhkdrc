@@ -26,9 +26,9 @@ control + alt + f
 	dolphin
 
 control + alt + b
-	google-chrome-stable
+	google-chrome-stable --profile-directory=Default 
 
-control + alt + s
+super + shift + s
 	systemsettings5
 
 control + alt + g
@@ -39,6 +39,9 @@ control + alt + c
 
 control + alt + w
 	whatsapp-nativefier
+
+control + alt + s
+	spotify
 
 #  ------ keys  -------- # 
 
@@ -53,8 +56,11 @@ XF86MonBrightnessDown
 # ------desktops---------# 
 
 # focus or send to the given desktop
-super + {_,shift + }{1-9}
-	bspc {desktop -f,node -d} '^{1-9}'
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+super + alt + {_,shift + }{1-5}
+	bspc {desktop -f,node -d} '^{11-15}'
 
 #----- actions ---------#
 

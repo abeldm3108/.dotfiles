@@ -19,15 +19,13 @@ external_home=HDMI-A-0
 if [[ $(xrandr -q | grep "$external_home connected") ]]; then
     echo "Entering multi-screen setup"
     xrandr --output $external_home --primary --mode 1920x1080 --rotate normal --output $laptop --mode 1920x1080 --rotate normal --right-of $external_home
-    bspc monitor $external_home -d 1 2 3 4 5 6 7
-    bspc monitor $laptop -d 8 9 0
+    bspc monitor $external_home -d 1 2 3 4 5 6 7 8 9 0
+    bspc monitor $laptop -d 11 12 13 14 15
 else
     echo "Entering single-screen setup"
     xrandr --output $laptop --primary --mode 1920x1080 --rotate normal 
-    bspc monitor $laptop -d 1 2 3 4 5 6 7
+    bspc monitor $laptop -d 1 2 3 4 5 6 7 8 9 0
 fi
-
-bspc monitor -d I II III IV V VI VII
 
 bspc config border_width         2
 bspc config window_gap          7
@@ -36,16 +34,20 @@ bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a gimp desktop='^5' state=floating follow=on
-bspc rule -a google-chrome-stable desktop='^2' follow=on
-bspc rule -a clickup desktop='^7' follow=off
+bspc rule -a Zathura state=tiled
+bspc rule -a Gimp desktop='^5' state=floating follow=on
+bspc rule -a google-chrome-stable desktop='^2' follow=on #Not working
+bspc rule -a Clickup desktop='^7' follow=off
+bspc rule -a Whatsapp-nativefier desktop='^6'
+bspc rule -a Spotify desktop='^8'
+
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc config top_padding 20
 
 # border colors 
-bspc config focused_border_color "#83a598"
+bspc config focused_border_color "#5492ff"
 bspc config normal_border_color "#454849"
 
 
