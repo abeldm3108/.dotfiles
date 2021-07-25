@@ -28,6 +28,8 @@ control + alt + f
 control + alt + b
 	google-chrome-stable --profile-directory=Default 
 
+control + alt + n
+	google-chrome-stable --incognito
 super + shift + s
 	systemsettings5
 
@@ -41,8 +43,7 @@ control + alt + w
 	whatsapp-nativefier
 
 control + alt + s
-	spotify
-
+	spicetify apply
 #  ------ keys  -------- # 
 
 XF86MonBrightnessUp

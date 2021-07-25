@@ -10,7 +10,7 @@ setxkbmap -option caps:swapescape &
 
 xrdb merge ~/.Xresources &  # (terminal theme)
 
-#$HOME/.config/polybar/launch.sh &
+$HOME/.config/polybar/launch.sh --grayblocks &
 
 #Open programs
 

@@ -35,7 +35,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Zathura state=tiled
-bspc rule -a Gimp desktop='^5' state=floating follow=on
+bspc rule -a Gimp desktop='^5' follow=on
 bspc rule -a google-chrome-stable desktop='^2' follow=on #Not working
 bspc rule -a Clickup desktop='^7' follow=off
 bspc rule -a Whatsapp-nativefier desktop='^6'

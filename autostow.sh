@@ -29,6 +29,7 @@ CONFIG_INDEP_PKG=(
 	compton
 	picom
 	zathura
+    spicetify
 )
 
 # given a value and an array, returns if contained
