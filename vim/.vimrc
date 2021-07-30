@@ -3,7 +3,7 @@ syntax enable
 colorscheme delek
 set clipboard=unnamed
 
-set relativenumber
+set number
 set linebreak
 set showbreak=+++
 set tabstop=4

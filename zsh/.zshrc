@@ -21,6 +21,7 @@ alias updt="sudo pacman -Syy & sudo pacman -Syu"
 alias wifilist="nmcli device wifi list"
 alias wificonnect="nmcli device wifi connect SSID_or_BSSID password password"
 #Aliases for edit dotfiles
+alias dot='cd ~/.dotfiles'
 alias zshrcedit="vim ~/.dotfiles/zsh/.zshrc"
 alias alacrittyedit="vim ~/.dotfiles/alacritty/alacritty.yml"
 alias vimrcedit="vim ~/.dotfiles/vim/.vimrc"
