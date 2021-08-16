@@ -18,4 +18,8 @@ The list of required dependencies: (sudo pacman -S)
 - maim
 - rofi
 - alsa-utils
+- stalonetray
+- calc
+- python-pywal
+- networkmanager-dmenu
 - 
