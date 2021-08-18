@@ -2,7 +2,6 @@ CONFIG="$HOME/.config"
 
 # packages going to $HOME
 HOME_PKG=(
-    git
     xinit
     bash
 	vim
@@ -10,19 +9,15 @@ HOME_PKG=(
 )
 
 HOME_INDEP_PKG=(
-    bin
 )
 
 # packages going to $CONFIG
 CONFIG_PKG=(
-    kde
 )
 
 # packages going to $CONFIG/<package-name>
 CONFIG_INDEP_PKG=(
     alacritty
-    plasma-workspace
-    #autostart
     bspwm
     sxhkd
     polybar

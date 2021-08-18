@@ -20,6 +20,15 @@ XF86AudioMute
 
 super + h
 	polybar-msg cmd toggle
+
+super + l
+	betterlockscreen -l
+
+# -------- Keyboards -----#
+
+alt + space
+	~/.dotfiles/keyboard/switchkeyboard.sh
+
 # -------- Programs ------#
 
 super + Return
@@ -46,7 +55,7 @@ control + alt + w
 	whatsapp-nativefier
 
 control + alt + s
-	spicetify apply
+	spotify
 #  ------ keys  -------- # 
 
 XF86MonBrightnessUp

@@ -2,7 +2,8 @@
 #AUTOSTART
 sxhkd &
 picom &
-feh --bg-fill ~/.dotfiles/wallpapers/circles.jpg &
+feh --bg-fill ~/.dotfiles/wallpapers/arch-nord.png &
+
 setxkbmap -option caps:swapescape &
 
 
@@ -13,4 +14,6 @@ xrdb merge ~/.Xresources &  # (terminal theme)
 $HOME/.config/polybar/launch.sh --grayblocks &
 
 #Open programs
-
+clickup &
+whatsapp-nativefier &
+spotify
