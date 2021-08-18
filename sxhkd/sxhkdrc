@@ -34,6 +34,9 @@ alt + space
 super + Return
 	alacritty	
 
+control + alt + g
+	github-desktop
+
 control + alt + f
 	dolphin
 
