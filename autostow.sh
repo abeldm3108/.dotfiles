@@ -25,6 +25,7 @@ CONFIG_INDEP_PKG=(
 	picom
 	zathura
     spicetify
+    rofi
 )
 
 # given a value and an array, returns if contained

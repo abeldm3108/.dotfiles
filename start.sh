@@ -14,6 +14,7 @@ xrdb merge ~/.Xresources &  # (terminal theme)
 $HOME/.config/polybar/launch.sh --grayblocks &
 
 #Open programs
-clickup &
-whatsapp-nativefier &
-spotify
+
+
+#Focus desktop 1
+xdotool keydown super keydown 1 keyup 1 keyup super

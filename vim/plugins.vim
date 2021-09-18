@@ -24,5 +24,8 @@ Plug 'scrooloose/NERDTree'
 " Auto pairs for '(' '[' '{'
 Plug 'jiangmiao/auto-pairs'
 
+" Nord theme
+Plug 'arcticicestudio/nord-vim'
+
 " Initialize plugin system
 call plug#end()

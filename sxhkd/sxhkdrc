@@ -18,11 +18,11 @@ XF86AudioLowerVolume
 XF86AudioMute
 	amixer -D pulse set Master 1+ toggle
 
-super + h
+super + p
 	polybar-msg cmd toggle
 
-super + l
-	betterlockscreen -l
+super + x
+	betterlockscreen -l & systemctl suspend
 
 # -------- Keyboards -----#
 
@@ -34,31 +34,27 @@ alt + space
 super + Return
 	alacritty	
 
-control + alt + g
-	github-desktop
-
 control + alt + f
 	dolphin
+
+control + alt + u
+	dolphin ~/"Documents/Uni/Cuatri 2A"
 
 control + alt + b
 	google-chrome-stable --profile-directory=Default 
 
 control + alt + n
 	google-chrome-stable --incognito
+
 super + shift + s
 	systemsettings5
 
 control + alt + g
 	gimp	
 
-control + alt + c
-	clickup
+control + alt + a
+	/opt/AMPL/ampl_linux-intel64/amplide/amplide
 
-control + alt + w
-	whatsapp-nativefier
-
-control + alt + s
-	spotify
 #  ------ keys  -------- # 
 
 XF86MonBrightnessUp
@@ -72,11 +68,19 @@ XF86MonBrightnessDown
 # ------desktops---------# 
 
 # focus or send to the given desktop
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}'
 
-super + alt + {_,shift + }{1-5}
-	bspc {desktop -f,node -d} '^{11-15}'
+super + shift + {1-9,0}
+	bspc node -d '^{1-9,10}' &
+	bspc desktop -f '^{1-9,10}'
+
+super + alt + {1-9,0}
+	bspc desktop -f '^{11-19,20}'
+
+super + alt + shift + {1-9,0}
+	bspc node -d '^{11-19,20}' &
+	bspc desktop -f '^{11-19,20}'
 
 #----- actions ---------#
 
@@ -180,5 +184,7 @@ super  + alt + {j,k,l,ntilde}
 
 #cropped save
 ctrl + alt + p
-      maim --select "/home/$USER/Pictures/$(date).png"
+	maim --select "/home/$USER/Pictures/Screenshots/$(date +%Y-%M-%d_%T).png" 
+
+# -------------- shortcuts xte ---------------#
 

@@ -44,3 +44,5 @@ set tabstop=4
 "
 "  """ Plug configuration
 let g:airline_powerline_fonts = 1
+
+:autocmd BufNewFile *.cpp 0r ~/.dotfiles/vim/templates/algoritmia.cpp
