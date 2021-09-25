@@ -1,0 +1,57 @@
+SYSTEM_PAC = (
+	git
+	bspwm
+	sxhkd
+	vim
+	rofi
+	compton
+	picom
+	stow
+	feh
+	polybar
+	alacritty
+	zsh
+	oh-my-zsh
+	zathura
+	zathura-pdf-mupdf
+	firefox
+	dmenu
+	networkmanager
+	python-pywal
+	dunst
+	ttf-font-awesome
+	rclone
+	stalonetray
+	maim
+	xorg-xrandr
+	networkmanager-dmenu
+	xorg-setxkbmap	
+	wmctrl
+)
+
+
+SYSTEM_AUR = (
+	junegunn/vim-plug
+	aur.archlinux.org/systray-x-git
+	aur.archlinux.org/betterlockscreen
+	aur.archlinux.org/i3lock-color	
+	brightessctl
+	nerd-fonts-iosevka
+)
+
+PROG_PAC = (
+    audacity
+    discord
+    gimp
+    simplescreenrecorder
+    pdfjam
+    telegram-desktop
+)
+
+PROG_AUR = (
+    whatsapp-nativefier-dark
+	todoist
+	spotify
+	silos
+	silo-overleaf
+)

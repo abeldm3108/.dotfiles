@@ -1,30 +1,25 @@
 #! /bin/sh
 #AUTOSTART
-~/.dotfiles/start.sh &
-#sxhkd &
-#picom &
-#feh --bg-fill ~/.dotfiles/wallpapers/circles.jpg &
-#setxkbmap -option caps:swapescape &
-
-
-# compositing and wallpaper 
+sxhkd &
+picom &
+feh --bg-fill ~/.dotfiles/wallpapers/arch-nord.png &
 
 #xrdb merge ~/.Xresources &  # (terminal theme)
 
-#$HOME/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh
 
 laptop=eDP
 external_home=HDMI-A-0
 
 if [[ $(xrandr -q | grep "$external_home connected") ]]; then
     echo "Entering multi-screen setup"
-    xrandr --output $external_home --primary --mode 1920x1080 --rotate normal --output $laptop --mode 1920x1080 --rotate normal --right-of $external_home
-    bspc monitor $external_home -d 1 2 3 4 5 6 7 8 9 0
-    bspc monitor $laptop -d 11 12 13 14 15 16 17 18 19 20
+    xrandr --output $external_home --primary --mode 1920x1080 --rotate normal --output $laptop --mode 1920x1080 --rotate normal --left-of $external_home
+    bspc monitor $external_home -d 1 2 3 4 5 6 7 8 9 10
+    bspc monitor $laptop -d 11 12 13 14
 else
     echo "Entering single-screen setup"
     xrandr --output $laptop --primary --mode 1920x1080 --rotate normal 
-    bspc monitor $laptop -d 1 2 3 4 5 6 7 8 9 0
+    bspc monitor $laptop -d 1 2 3 4 5 6 7 8 9 10 11 12 13 14
 fi
 
 bspc config border_width         2
@@ -38,16 +33,13 @@ bspc config pointer_modifier mod1
 bspc config pointer_action1 move
 
 bspc rule -a Zathura state=tiled
-bspc rule -a Gimp desktop='^5' follow=on
-bspc rule -a ClickUp desktop='^7' follow=off
-bspc rule -a Whatsapp-for-linux desktop='^6' follow=off
-bspc rule -a Spotify desktop='^8' follow=off
-bspc rule -a Translatium state=floating
+bspc rule -a Todoist desktop='^1' follow=off
+bspc rule -a whatsapp-nativefier-d52542 desktop='^2' follow=off
+bspc rule -a spotify desktop='^3' follow=off
 
-bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
-bspc config top_padding 33
+bspc config top_padding 1
 bspc config bottom_padding 1
 
 # border colors 

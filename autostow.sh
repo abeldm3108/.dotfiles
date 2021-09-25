@@ -13,6 +13,7 @@ HOME_INDEP_PKG=(
 
 # packages going to $CONFIG
 CONFIG_PKG=(
+    betterlockscreenrc
 )
 
 # packages going to $CONFIG/<package-name>

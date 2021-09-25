@@ -8,11 +8,6 @@ set linebreak
 set showbreak=+++
 set tabstop=4
 	
-" noremap ñ l
-" noremap l j
-" noremap j h
-" noremap k k
-
 " set textwidth=50
 " set showmatch
 " set visualbell
@@ -41,7 +36,10 @@ set tabstop=4
 "  " inoremap <down>  <nop>
 "  " inoremap <left>  <nop>
 "  " inoremap <right> <nop>
-"
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
 "  """ Plug configuration
 let g:airline_powerline_fonts = 1
 

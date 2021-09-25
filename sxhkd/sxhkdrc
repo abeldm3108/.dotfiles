@@ -1,7 +1,14 @@
-#  ------ programs  -------- # 
+#  ------ Config  -------- # 
 
-super + space
-        rofi -show drun
+
+super + shift + Delete
+	poweroff
+
+super + shift + b
+	~/.dotfiles/rofi/bluetooth.sh
+
+super + shift + n
+	~/.dotfiles/rofi/networks.sh
 
 # reload config (bspwmrc and sxhkdrc)  # 
 
@@ -18,11 +25,17 @@ XF86AudioLowerVolume
 XF86AudioMute
 	amixer -D pulse set Master 1+ toggle
 
+XF86MonBrightnessUp
+	brightnessctl -d amdgpu_bl0 s '+5%'
+
+XF86MonBrightnessDown 
+	brightnessctl -d amdgpu_bl0 s '5%-'
+
 super + p
 	polybar-msg cmd toggle
 
 super + x
-	betterlockscreen -l & systemctl suspend
+	amixer -c 1 -- sset Master mute & betterlockscreen -l & systemctl suspend
 
 # -------- Keyboards -----#
 
@@ -31,23 +44,32 @@ alt + space
 
 # -------- Programs ------#
 
+super + space
+        rofi -show drun
+
 super + Return
 	alacritty	
 
 control + alt + f
-	dolphin
+	alacritty -e vifm
 
 control + alt + u
-	dolphin ~/"Documents/Uni/Cuatri 2A"
+	alacritty -e vifm ~/"Documents/Uni/Cuatri 2A"
 
 control + alt + b
-	google-chrome-stable --profile-directory=Default 
+	firefox
 
 control + alt + n
-	google-chrome-stable --incognito
+	firefox --private-window
+
+control + alt + o
+	overleaf
+
+control + alt + s
+	spotify
 
 super + shift + s
-	systemsettings5
+	~/.dotfiles/start.sh
 
 control + alt + g
 	gimp	
@@ -55,32 +77,18 @@ control + alt + g
 control + alt + a
 	/opt/AMPL/ampl_linux-intel64/amplide/amplide
 
-#  ------ keys  -------- # 
-
-XF86MonBrightnessUp
-    xbacklight -inc 10
-
-XF86MonBrightnessDown
-    xbacklight -dec 10
 
 #  ------------BSPWM HOTKEYS  ------------ #
 
 # ------desktops---------# 
 
 # focus or send to the given desktop
-super + {1-9,0}
-	bspc desktop -f '^{1-9,10}'
+super + {w,e,r,t,1,2,3,4,5,6,7,8,9,0}
+	bspc desktop -f '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14}'
 
-super + shift + {1-9,0}
-	bspc node -d '^{1-9,10}' &
-	bspc desktop -f '^{1-9,10}'
-
-super + alt + {1-9,0}
-	bspc desktop -f '^{11-19,20}'
-
-super + alt + shift + {1-9,0}
-	bspc node -d '^{11-19,20}' &
-	bspc desktop -f '^{11-19,20}'
+super + shift + {w,e,r,t,1,2,3,4,5,6,7,8,9,0}
+	bspc node -d '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14}' &
+	bspc desktop -f '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14}'
 
 #----- actions ---------#
 
@@ -119,8 +127,8 @@ super + ctrl + {m,x,y,z}
 # focus/swap
 
 # focus the node in the given direction
-super + {_,shift + }{j,k,l,ntilde}
-	bspc node -{f,s} {west,north,south,east}
+super + {_,shift + }{h,j,k,l}
+    bspc node -{f,s} {west,south,north,east}
 
 # focus the last node/desktop
 alt + {_,shift+} Tab
@@ -168,11 +176,11 @@ super + {o,i}
 # move/resize
 
 # expand a window by moving one of its side outward
-super + ctrl + {j,k,l,ntilde}
+super + ctrl + {h,j,k,l}
 	bspc node -z {left -20 0,top 0 -20,top 0 20,left 20 0}
 
 # contract a window by moving one of its side inward
-super  + alt + {j,k,l,ntilde}
+super  + alt + {h,j,k,l}
 	bspc node -z {right -20 0,bottom 0 -20,bottom 0 20,right 20 0}
 
 # move a floating window
