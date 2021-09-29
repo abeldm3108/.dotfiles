@@ -15,7 +15,7 @@ if [[ $(xrandr -q | grep "$external_home connected") ]]; then
     echo "Entering multi-screen setup"
     xrandr --output $external_home --primary --mode 1920x1080 --rotate normal --output $laptop --mode 1920x1080 --rotate normal --left-of $external_home
     bspc monitor $external_home -d 1 2 3 4 5 6 7 8 9 10
-    bspc monitor $laptop -d 11 12 13 14
+    bspc monitor $laptop -d w e r t
 else
     echo "Entering single-screen setup"
     xrandr --output $laptop --primary --mode 1920x1080 --rotate normal 
@@ -33,9 +33,9 @@ bspc config pointer_modifier mod1
 bspc config pointer_action1 move
 
 bspc rule -a Zathura state=tiled
-bspc rule -a Todoist desktop='^1' follow=off
-bspc rule -a whatsapp-nativefier-d52542 desktop='^2' follow=off
-bspc rule -a spotify desktop='^3' follow=off
+bspc rule -a Todoist desktop='^4' follow=off
+bspc rule -a whatsapp-nativefier-d52542 desktop='^1' follow=off
+bspc rule -a spotify desktop='^2' follow=off
 
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off

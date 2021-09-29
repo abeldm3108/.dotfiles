@@ -7,4 +7,4 @@ else
 	setxkbmap -model pc105 -layout "es"
 fi
 
-setxkbma -option caps:swapescape
+	setxkbmap -option caps:swapescape

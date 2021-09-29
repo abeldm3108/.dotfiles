@@ -27,6 +27,7 @@ SYSTEM_PAC = (
 	networkmanager-dmenu
 	xorg-setxkbmap	
 	wmctrl
+	xorg-xev
 )
 
 
@@ -37,6 +38,7 @@ SYSTEM_AUR = (
 	aur.archlinux.org/i3lock-color	
 	brightessctl
 	nerd-fonts-iosevka
+	xkb-switch
 )
 
 PROG_PAC = (

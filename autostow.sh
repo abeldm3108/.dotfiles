@@ -27,6 +27,7 @@ CONFIG_INDEP_PKG=(
 	zathura
     spicetify
     rofi
+    dunst
 )
 
 # given a value and an array, returns if contained
