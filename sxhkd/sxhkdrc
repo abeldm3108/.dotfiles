@@ -34,8 +34,11 @@ XF86MonBrightnessDown
 XF86HomePage
 	playerctl --player=spotify play-pause
 
-# XF86Mail
-# XF86Calculator
+XF86Mail
+	playerctl --player=spotify previous
+
+XF86Calculator
+	playerctl --player=spotify next
 
 super + p
 	polybar-msg cmd toggle
@@ -55,6 +58,9 @@ super + space
 
 super + Return
 	alacritty	
+
+control + alt + t
+	.dotfiles/scripts/trans.sh
 
 control + alt + f
 	alacritty -e vifm
@@ -80,6 +86,9 @@ super + shift + s
 control + alt + g
 	gimp	
 
+control + alt + {y,i}
+	firefox {https://www.youtube.com/,https://www.youtube.com/}
+
 control + alt + a
 	/opt/AMPL/ampl_linux-intel64/amplide/amplide
 
@@ -93,8 +102,7 @@ super + {w,e,r,t,1,2,3,4,5,6,7,8,9,0}
 	bspc desktop -f '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14}'
 
 super + shift + {w,e,r,t,1,2,3,4,5,6,7,8,9,0}
-	bspc node -d '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14}' &
-	bspc desktop -f '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14}'
+	bspc node -d '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14}' --follow
 
 #----- actions ---------#
 

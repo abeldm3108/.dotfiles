@@ -1,4 +1,5 @@
 CONFIG="$HOME/.config"
+X11="$/etc/X11"
 
 # packages going to $HOME
 HOME_PKG=(
@@ -30,6 +31,11 @@ CONFIG_INDEP_PKG=(
     dunst
 )
 
+X11_PKG=(
+    xorg.conf.d
+    
+)
+
 # given a value and an array, returns if contained
 function contains {
   local e match="$1"
@@ -50,6 +56,8 @@ function get_pkg_dir {
             target_dir=$CONFIG
         elif contains $1 "${CONFIG_INDEP_PKG[@]}"; then
            target_dir="$CONFIG/$1"
+        elif contains $1 "${X11_PKG[@]}"; then
+           target_dir="$X11/$1"
         else
             target_dir="ERROR"
         fi
@@ -72,6 +80,10 @@ function restow {
 
     for package in ${CONFIG_INDEP_PKG[@]}; do
         mystow $package "$CONFIG/$package"
+    done
+
+    for package in ${X11_PKG[@]}; do
+        mystow $package "$X11/$package"
     done
 }
 

@@ -28,6 +28,7 @@ SYSTEM_PAC = (
 	xorg-setxkbmap	
 	wmctrl
 	xorg-xev
+	translate-shell
 )
 
 
