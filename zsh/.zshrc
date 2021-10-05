@@ -14,8 +14,10 @@ bindkey '^@'      autosuggest-accept
 alias pw="poweroff"
 alias rb="reboot"
 
+alias incog="unset HISTFILE"
+
 alias zshupdt="source ~/.zshrc"
-alias ll="ls -a"
+alias la="ls -a"
 alias ..="cd .."
 alias zrc="source ~/.zshrc"
 alias autostow="(cd ~/.dotfiles; ~/.dotfiles/autostow.sh)"

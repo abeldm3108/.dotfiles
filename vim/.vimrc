@@ -7,6 +7,16 @@ set number
 set linebreak
 set showbreak=+++
 set tabstop=4
+set shiftwidth=4
+
+let g:AutoClosePairs_del = "("
+let g:Tex_FormatDependency_dvi = 'dvi,ps,pdf'
+
+filetype plugin on
+filetype indent on
+let g:tex_flavor='latex'
+set sw=2
+set iskeyword+=:
 	
 " set textwidth=50
 " set showmatch
@@ -41,6 +51,8 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 "  """ Plug configuration
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
+"
+colorscheme nord
 
 :autocmd BufNewFile *.cpp 0r ~/.dotfiles/vim/templates/algoritmia.cpp

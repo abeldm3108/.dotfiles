@@ -89,6 +89,9 @@ control + alt + g
 control + alt + {y,i}
 	firefox {https://www.youtube.com/,https://www.youtube.com/}
 
+control + alt + m
+	firefox "https://www.google.com/maps/@28.9533099,10.5943645,3z?authuser=1"
+
 control + alt + a
 	/opt/AMPL/ampl_linux-intel64/amplide/amplide
 
