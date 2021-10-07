@@ -17,7 +17,7 @@ filetype indent on
 let g:tex_flavor='latex'
 set sw=2
 set iskeyword+=:
-	
+
 " set textwidth=50
 " set showmatch
 " set visualbell

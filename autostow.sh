@@ -23,12 +23,12 @@ CONFIG_INDEP_PKG=(
     bspwm
     sxhkd
     polybar
-	compton
 	picom
 	zathura
     spicetify
     rofi
     dunst
+	vifm
 )
 
 X11_PKG=(
