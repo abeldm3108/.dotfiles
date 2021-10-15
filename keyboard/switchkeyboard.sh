@@ -1,6 +1,6 @@
 keyboard=$(xkb-switch)
 
-if [ "$keyboard" = "es" ]
+if [[ $keyboard == "es" ]]
 then
 	setxkbmap -model pc105 -layout "us" -variant altgr-intl
 else

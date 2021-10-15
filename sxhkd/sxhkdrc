@@ -69,10 +69,10 @@ control + alt + u
 	alacritty -e vifm ~/"Documents/Uni/Cuatri 2A"
 
 control + alt + b
-	firefox
+	firefox -new-window
 
 control + alt + n
-	firefox --private-window
+	firefox -new-window --private-window
 
 control + alt + o
 	overleaf
@@ -87,10 +87,10 @@ control + alt + g
 	gimp	
 
 control + alt + {y,i}
-	firefox {https://www.youtube.com/,https://www.youtube.com/}
+	firefox -new-window {https://www.youtube.com/,https://www.youtube.com/}
 
 control + alt + m
-	firefox "https://www.google.com/maps/@28.9533099,10.5943645,3z?authuser=1"
+	firefox -new-window "https://www.google.com/maps/@28.9533099,10.5943645,3z?authuser=1"
 
 control + alt + a
 	/opt/AMPL/ampl_linux-intel64/amplide/amplide
@@ -118,7 +118,7 @@ super + {_,shift + }q
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
-super + Tab 
+super + f 
 	bspc desktop -l next
 
 #NO IDEA
@@ -130,18 +130,18 @@ super + y
 super + g
 	bspc node -s biggest
 
-super + {Down,Up}
+super + {Left,Right}
     bspc desktop -f {prev,next}.local
 
 # previous/next monitor
-super + {Left,Right}
+super + Tab
     bspc monitor -f {prev,next}
 
 
 # -------------- state/flags -------------------#
 
 # set the window state
-super + {d,shift + d,s,f}
+super + {d,shift + d,s,shift + f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
@@ -216,7 +216,7 @@ super  + alt + {h,j,k,l}
 
 #cropped save
 ctrl + alt + p
-	maim --select "/home/$USER/Pictures/Screenshots/$(date +%Y-%M-%d_%T).png" 
+	flameshot gui
 
 # -------------- shortcuts xte ---------------#
 

@@ -2,8 +2,12 @@ using namespace std;
 #include<iostream>
 #include<vector>
 
-using VE = vector<int>;
+using ll = long long;
+using VL = vector<ll>;
+using VVL = vector<VL>;
+
 
 int main(){
+
 
 }

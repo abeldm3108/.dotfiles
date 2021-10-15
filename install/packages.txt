@@ -29,6 +29,7 @@ SYSTEM_PAC = (
 	wmctrl
 	xorg-xev
 	translate-shell
+	flameshot
 )
 
 
@@ -53,10 +54,9 @@ PROG_PAC = (
 
 PROG_AUR = (
     whatsapp-nativefier-dark
-	google-calendar-nativefier-dark
 	todoist
 	spotify
 	silos
 	silo-overleaf
-	tikzit
+	google-calendar-nativefier
 )
