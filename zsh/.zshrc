@@ -17,6 +17,7 @@ alias rb="reboot"
 alias incog="unset HISTFILE"
 
 alias zshupdt="source ~/.zshrc"
+alias ls='ls --color=auto'
 alias la="ls -a"
 alias ..="cd .."
 alias zrc="source ~/.zshrc"
@@ -49,7 +50,10 @@ alias chrome="/opt/google/chrome/chrome"
 
 #Algoritmia aliases
 alias run="chmod +x a.out & ./a.out"
-alias algo="cd ~/\"Documents/Uni/Cuatri 2A/4. ALGO/Programas\""
 alias gcc="g++ -Wall"
+
+function algo {
+  firefox -new-window "https://jutge.org/" 
+}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

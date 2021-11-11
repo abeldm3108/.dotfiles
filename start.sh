@@ -8,3 +8,4 @@ xrdb merge ~/.Xresources &  # (terminal theme)
 #Open programs
 todoist &
 whatsapp-nativefier-dark &
+telegram-desktop &

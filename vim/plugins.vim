@@ -8,4 +8,6 @@ Plug 'arcticicestudio/nord-vim'
 
 Plug 'lervag/vimtex'
 
+Plug 'sirver/ultisnips'
+
 call plug#end()

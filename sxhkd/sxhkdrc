@@ -7,9 +7,6 @@ super + shift + Delete
 super + shift + b
 	~/.dotfiles/rofi/bluetooth.sh
 
-super + shift + n
-	~/.dotfiles/rofi/networks.sh
-
 # reload config (bspwmrc and sxhkdrc)  # 
 
 super + shift + space 
@@ -46,6 +43,9 @@ super + p
 super + x
 	amixer -c 1 -- sset Master mute & betterlockscreen -l & systemctl suspend
 
+super + shift + n 
+	dunstctl set-paused toggle
+
 # -------- Keyboards -----#
 
 alt + space
@@ -63,22 +63,22 @@ control + alt + t
 	.dotfiles/scripts/trans.sh
 
 control + alt + f
-	alacritty -e vifm
+	alacritty -e vifm ~/
 
 control + alt + u
 	alacritty -e vifm ~/"Documents/Uni/Cuatri 2A"
 
 control + alt + b
-	firefox -new-window
+	brave --new-window
 
 control + alt + n
-	firefox -new-window --private-window
-
-control + alt + o
-	overleaf
+	brave --incognito
 
 control + alt + s
 	spotify
+
+control + alt + w
+	whatsapp-nativefier-dark
 
 super + shift + s
 	~/.dotfiles/start.sh
@@ -87,10 +87,10 @@ control + alt + g
 	gimp	
 
 control + alt + {y,i}
-	firefox -new-window {https://www.youtube.com/,https://www.youtube.com/}
+	brave --new-window {https://www.youtube.com/,https://www.youtube.com/}
 
 control + alt + m
-	firefox -new-window "https://www.google.com/maps/@28.9533099,10.5943645,3z?authuser=1"
+	brave -new-window "https://www.google.com/maps/@28.9533099,10.5943645,3z?authuser=1"
 
 control + alt + a
 	/opt/AMPL/ampl_linux-intel64/amplide/amplide
