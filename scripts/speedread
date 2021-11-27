@@ -1,6 +1,5 @@
 #!/usr/bin/env perl
-#
-# speedread:  A simple terminal-based open source spritz-alike
+# # speedread:  A simple terminal-based open source spritz-alike
 #
 # Show input text as a per-word RSVP (rapid serial visual presentation)
 # aligned on optimal reading points.  This kind of input mode allows
@@ -30,7 +29,7 @@ use strict;
 use autodie;
 use v5.14;
 
-my $wpm = 250;
+my $wpm = 450;
 my $resume = 0;
 my $multiword = 0;
 
@@ -64,6 +63,8 @@ my $current_orp;
 my $next_word_time = 0;
 my $next_input_time = 0;
 my $skipped = 0;
+my $lentot;
+my $percent;
 
 my @lastlines;
 my $tty = rawinput->new();
@@ -99,14 +100,14 @@ sub find_ORP {
 
 sub show_guide {
 	# Top visual guide
-	say(" "x$ORPvisualpos . color('red') . "v" . color('reset') . "\033[K");
-}
+	say(" "x$ORPvisualpos . color('red') . "v" . color('reset') . "\033[K"); }
 
 sub show_word {
 	my ($word, $i) = @_;
 
 	my $pivotch = substr($word, $i, 1);
 	$pivotch = "·" if $pivotch eq ' ';
+	$percent = ceil($wordcounter / $lentot * 100);
 
 	print("\r\033[K"
 		. " " x ($ORPvisualpos - $i)
@@ -119,7 +120,8 @@ sub show_word {
 		. substr($word, $i+1)
 		. color("reset")
 		. " " x ($cursorpos - (($ORPvisualpos - $i) + length($word)))
-		. "$wpm wpm"
+		. "$wpm wpm   readed $percent%"
+		#. "len = $lentot"
 		. ($paused ? "  ".color("yellow")."PAUSED".color("reset") : ""));
 }
 
@@ -161,11 +163,11 @@ sub process_keys {
 	my ($word, $i, $wn) = @_;
 	while ($tty->key_pressed()) {
 		my $ch = $tty->getch();
-		if ($ch eq '[') {
-			$wpm = int($wpm * 0.9);
+		if ($ch eq 'h') {
+			$wpm = int($wpm - 25);
 
-		} elsif ($ch eq ']') {
-			$wpm = int($wpm * 1.1);
+		} elsif ($ch eq 'l') {
+			$wpm = int($wpm + 25);
 
 		} elsif ($ch eq ' ') {
 			$paused = not $paused;
@@ -195,6 +197,8 @@ sub main {
 		pop @lastlines if @lastlines > 2;
 
 		my (@words) = grep { /./ } split /(?:-|\s)+/;
+
+	    $lentot = scalar @words;
 
 		if ($multiword) {
 			# Join adjecent short words
@@ -242,7 +246,6 @@ sub main {
 	print_stats();
 	sleep(1);
 }
-
 
 package rawinput;
 

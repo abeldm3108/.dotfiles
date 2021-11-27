@@ -59,4 +59,5 @@ PROG_AUR = (
 	silos
 	silo-overleaf
 	google-calendar-nativefier
+	joplin
 )

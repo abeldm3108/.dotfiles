@@ -39,6 +39,10 @@ alias xinitrcedit="vim ~/.dotfiles/xinit/.xinitrc"
 alias packagesedit="vim ~/.dotfiles/install/packages.txt"
 alias start="~/.dotfiles/start.sh"
 
+
+
+alias speednews="~/.dotfiles/scripts/speednews/speednews"
+
 #Translate
 alias enes="trans en:es"
 alias esen="trans es:en"
@@ -51,9 +55,9 @@ alias chrome="/opt/google/chrome/chrome"
 #Algoritmia aliases
 alias run="chmod +x a.out & ./a.out"
 alias gcc="g++ -Wall"
+alias algo="cd ~/Documents/Uni/Cuatri\ 2A/4.\ ALGO/Programas"
+alias joc="cd ~/Documents/Uni/Cuatri\ 2A/4.\ ALGO/Joc/game"
+alias view="brave ~/Documents/Uni/Cuatri\ 2A/4.\ ALGO/Joc/game/Viewer/viewer.html"
 
-function algo {
-  firefox -new-window "https://jutge.org/" 
-}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
