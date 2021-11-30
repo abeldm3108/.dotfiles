@@ -1,6 +1,0 @@
-The variable $length will now hold the length of the Perl array. This is referred to as "implicit scalar conversion", and it is probably the easiest and most common way to determine the Perl array length. However, there are at least two other approaches to determing the array length, and I'll show them here in case you run into them.
-
-aldfkj asldkjfsla lsdk asldklfjladfj adskfjk añdlsfk d lsdlkfk dsf sasdfljk sddlfjkj.
-
-
-The variable $length will now hold the length of the Perl array. This is referred to as "implicit scalar conversion", and it is probably the easiest and most common way to determine the Perl array length. However, there are at least two other approaches to determing the array length, and I'll show them here in case you run into them.

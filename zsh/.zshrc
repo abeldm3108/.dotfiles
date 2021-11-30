@@ -15,6 +15,7 @@ alias pw="poweroff"
 alias rb="reboot"
 
 alias incog="unset HISTFILE"
+alias vim="nvim"
 
 alias zshupdt="source ~/.zshrc"
 alias ls='ls --color=auto'
@@ -36,7 +37,7 @@ alias bspwmrcedit="vim ~/.dotfiles/bspwm/bspwmrc"
 alias sxhkdrcedit="vim ~/.dotfiles/sxhkd/sxhkdrc"
 alias picomedit="vim ~/.dotfiles/picom/picom.conf"
 alias xinitrcedit="vim ~/.dotfiles/xinit/.xinitrc"
-alias packagesedit="vim ~/.dotfiles/install/packages.txt"
+alias packagesedit="vim ~/.dotfiles/install/packages.sh"
 alias start="~/.dotfiles/start.sh"
 
 

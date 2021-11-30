@@ -93,7 +93,7 @@ control + alt + m
 	brave -new-window "https://www.google.com/maps/@28.9533099,10.5943645,3z?authuser=1"
 
 control + alt + j
-	joplin
+	joplin-desktop
 
 control + alt + a
 	/opt/AMPL/ampl_linux-intel64/amplide/amplide

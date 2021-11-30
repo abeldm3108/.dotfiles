@@ -5,8 +5,7 @@ X11="$/etc/X11"
 HOME_PKG=(
     xinit
     bash
-	vim
-	zsh
+    zsh
 )
 
 HOME_INDEP_PKG=(
@@ -19,16 +18,16 @@ CONFIG_PKG=(
 
 # packages going to $CONFIG/<package-name>
 CONFIG_INDEP_PKG=(
+    nvim
     alacritty
     bspwm
     sxhkd
     polybar
-	picom
-	zathura
-    spicetify
+    picom
+    zathura
     rofi
     dunst
-	vifm
+    vifm
 )
 
 X11_PKG=(

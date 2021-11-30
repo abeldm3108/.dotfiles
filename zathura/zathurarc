@@ -56,8 +56,6 @@ set statusbar-h-padding 0
 set statusbar-v-padding 0
 set show-scrollbars     false
 
-map m scroll full-up
-map n scroll full-down
 
 
 # NORD THEME
