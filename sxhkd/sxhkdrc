@@ -41,7 +41,8 @@ super + p
 	polybar-msg cmd toggle
 
 super + x
-	amixer -c 1 -- sset Master mute & betterlockscreen -l & systemctl suspend
+	systemctl suspend
+	# amixer -c 1 -- sset Master mute & betterlockscreen -l & systemctl suspend
 
 super + shift + n 
 	dunstctl set-paused toggle

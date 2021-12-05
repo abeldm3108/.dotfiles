@@ -13,6 +13,7 @@ bindkey '^@'      autosuggest-accept
 
 alias pw="poweroff"
 alias rb="reboot"
+alias python3='python'
 
 alias incog="unset HISTFILE"
 alias vim="nvim"
@@ -40,8 +41,6 @@ alias xinitrcedit="vim ~/.dotfiles/xinit/.xinitrc"
 alias packagesedit="vim ~/.dotfiles/install/packages.sh"
 alias start="~/.dotfiles/start.sh"
 
-
-
 alias speednews="~/.dotfiles/scripts/speednews/speednews"
 
 #Translate
@@ -52,6 +51,9 @@ alias esen="trans es:en"
 alias gbk="~/.dotfiles/rclone/gbkup.sh & ~/.dotfiles/rclone/gbkdown.sh"
 #Programs
 alias chrome="/opt/google/chrome/chrome"
+
+#Uni aliases
+alias apuntes="cd ~/Documents/Uni/Apuntes/Cuatri\ 2A"
 
 #Algoritmia aliases
 alias run="chmod +x a.out & ./a.out"

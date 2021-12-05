@@ -5,8 +5,12 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " Nord theme
 Plug 'arcticicestudio/nord-vim'
-Plug 'arcticicestudio/nord-vim-airline'
 
+Plug 'lervag/vimtex'
+
+Plug 'sirver/ultisnips'
+
+  
 " Plug 'lervag/vimtex'
 
 "Plug 'sirver/ultisnips'
