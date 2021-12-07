@@ -1,0 +1,56 @@
+alias python3='python'
+
+alias incog="unset HISTFILE"
+alias vim="nvim"
+
+alias ls='ls --color=auto'
+alias la="ls -a"
+alias ..="cd .."
+alias updt="sudo pacman -Syy & sudo pacman -Syu"
+
+#Nerworks
+alias wifilist="nmcli device wifi list"
+alias wificonnect="nmcli device wifi connect SSID_or_BSSID password password"
+alias blue=~"/.dotfiles/rofi/bluetooth.sh"
+alias network=~"/.dotfiles/rofi/networks.sh"
+
+#Aliases for edit dotfiles
+alias dot='cd ~/.dotfiles'
+alias autostow="(cd ~/.dotfiles; ~/.dotfiles/autostow.sh)"
+alias zshupdt="source ~/.zshrc"
+alias zshrcedit="vim ~/.dotfiles/zsh/.zshrc"
+alias aliasedit="vim ~/.dotfiles/zsh/.zsh_aliases"
+alias alacrittyedit="vim ~/.dotfiles/alacritty/alacritty.yml"
+alias vimrcedit="vim ~/.dotfiles/vim/.vimrc"
+alias bspwmrcedit="vim ~/.dotfiles/bspwm/bspwmrc"
+alias sxhkdrcedit="vim ~/.dotfiles/sxhkd/sxhkdrc"
+alias picomedit="vim ~/.dotfiles/picom/picom.conf"
+alias xinitrcedit="vim ~/.dotfiles/xinit/.xinitrc"
+alias packagesedit="vim ~/.dotfiles/install/packages.sh"
+alias start="~/.dotfiles/start.sh"
+
+alias speednews="~/.dotfiles/scripts/speednews/speednews"
+
+#Translate
+alias enes="trans en:es"
+alias esen="trans es:en"
+alias esca="trans es:ca"
+alias caes="trans ca:es"
+
+#Rclone google drive backup
+alias gbk="~/.dotfiles/rclone/gbkup.sh & ~/.dotfiles/rclone/gbkdown.sh"
+
+#Uni aliases
+alias apuntes="cd ~/Documents/Uni/Apuntes/Cuatri\ 2A"
+alias multi="vim ~/Documents/Uni/Apuntes/Cuatri\ 2A/Multi/Multi.tex"
+alias quantum="vim ~/Documents/Uni/Apuntes/Cuatri\ 2A/Quantum/Quantum.tex"
+alias algoritmia="vim ~/Documents/Uni/Apuntes/Cuatri\ 2A/Algoritmia/Algoritmia.tex"
+alias programacion="vim ~/Documents/Uni/Apuntes/Cuatri\ 2A/Programacion\ Matematica/ProgramacionMatematica.tex"
+
+
+#Algoritmia aliases
+alias run="chmod +x a.out & ./a.out"
+alias gcc="g++ -Wall"
+alias algo="cd ~/Documents/Uni/Cuatri\ 2A/4.\ ALGO/Programas"
+alias joc="cd ~/Documents/Uni/Cuatri\ 2A/4.\ ALGO/Joc/game"
+alias view="brave ~/Documents/Uni/Cuatri\ 2A/4.\ ALGO/Joc/game/Viewer/viewer.html"
