@@ -1,5 +1,5 @@
 CONFIG="$HOME/.config"
-X11="$/etc/X11"
+X11="/etc/X11"
 
 # packages going to $HOME
 HOME_PKG=(
@@ -32,8 +32,9 @@ CONFIG_INDEP_PKG=(
 
 X11_PKG=(
     xorg.conf.d
-    
 )
+
+
 
 # given a value and an array, returns if contained
 function contains {

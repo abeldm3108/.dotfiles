@@ -3,16 +3,12 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.local/share/nvim/plugged')
 
-" Nord theme
 Plug 'arcticicestudio/nord-vim'
 
 Plug 'lervag/vimtex'
 
 Plug 'sirver/ultisnips'
 
-  
-" Plug 'lervag/vimtex'
-
-"Plug 'sirver/ultisnips'
+Plug 'dylanaraps/wal'
 
 call plug#end()

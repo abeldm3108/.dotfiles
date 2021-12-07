@@ -8,7 +8,7 @@ alias la="ls -a"
 alias ..="cd .."
 alias updt="sudo pacman -Syy & sudo pacman -Syu"
 
-#Nerworks
+#Networks
 alias wifilist="nmcli device wifi list"
 alias wificonnect="nmcli device wifi connect SSID_or_BSSID password password"
 alias blue=~"/.dotfiles/rofi/bluetooth.sh"
@@ -16,7 +16,8 @@ alias network=~"/.dotfiles/rofi/networks.sh"
 
 #Aliases for edit dotfiles
 alias dot='cd ~/.dotfiles'
-alias autostow="(cd ~/.dotfiles; ~/.dotfiles/autostow.sh)"
+alias autostow="~/.dotfiles/autostow.sh"
+alias stowedit="vim ~/.dotfiles/autostow.sh"
 alias zshupdt="source ~/.zshrc"
 alias zshrcedit="vim ~/.dotfiles/zsh/.zshrc"
 alias aliasedit="vim ~/.dotfiles/zsh/.zsh_aliases"
