@@ -10,6 +10,7 @@ set tabstop=4
 set shiftwidth=4
 set relativenumber
 let g:AutoClosePairs_del = "("
+let g:AutoClosePairs_del = "["
 
 
 " LaTeX config

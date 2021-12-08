@@ -15,6 +15,7 @@ let g:AutoClosePairs_del = "("
 let g:AutoClosePairs_del = "["
 
 let mapleader = ","
+let maplocalleader = ","
 
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
