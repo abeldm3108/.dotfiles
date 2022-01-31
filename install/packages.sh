@@ -42,11 +42,15 @@ SYSTEM_PAC=(
 	playerctl
 	netctl
 	wpa_supplicant
+	xorg-xinput
+	xdotool
+	ttf-hack
+	qalculate-gtk
 )
 
 
 SYSTEM_AUR=(
-    neovim-plug
+    neovim-plug nord-vim vim-airline-themes
 	picom-rounded-corners
 	systray-x-git
 	betterlockscreen
@@ -54,7 +58,6 @@ SYSTEM_AUR=(
 	brightnessctl
 	nerd-fonts-iosevka
 	xkb-switch
-	nord-vim-
 )
 
 PROG_PAC=(
@@ -69,9 +72,7 @@ PROG_PAC=(
 PROG_AUR=(
 	whatsapp-nativefier-dark
 	todoist
-	spotify
-	spicetify-cli
-	spicetify-themes-git
+	spotify spotify-adblock-git spicetify-themes-git spicetify-cli
 	google-calendar-nativefier
 	joplin-desktop
 )

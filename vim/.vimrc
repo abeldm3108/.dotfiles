@@ -29,6 +29,17 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
+let g:vimtex_compiler_latexmk = {
+    \ 'options' : [
+    \   '-pdf',
+    \   '-pdflatex="xelatex --shell-escape %O %S"',
+    \   '-verbose',
+    \   '-file-line-error',
+    \   '-synctex=1',
+    \   '-interaction=nonstopmode',
+    \ ]
+    \}
+
 set rtp+=~/.dotfiles/vim/snippets/tex.snippets
 
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
@@ -70,6 +81,7 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+imap <C-BS> <C-W>
 "   Plug configuration
 " let g:airline_powerline_fonts = 1
 "

@@ -3,6 +3,10 @@ syntax enable
 colorscheme delek
 set clipboard=unnamed
 
+" Speed
+set timeoutlen=1000
+set ttimeoutlen=0
+
 set nocompatible
 
 set number
@@ -41,41 +45,11 @@ filetype indent on
 set sw=2
 set iskeyword+=:
 
-" set textwidth=50
-" set showmatch
-" set visualbell
-" set hlsearch
-" set smartcase
-" set ignorecase
-" set incsearch
-" set ruler
-" set autoindent
-" set expandtab
-" set shiftwidth=4
-" set smartindent
-" set smarttab
-" set softtabstop=4
-"  
-"  set backspace=indent,eol,start
-"
-"  inoremap jk <Esc>
-"
-"  " Ignore arrow keys
-"  " nnoremap <up>    <nop>
-"  " nnoremap <down>  <nop>
-"  " nnoremap <left>  <nop>
-"  " nnoremap <right> <nop>
-"  " inoremap <up>    <nop>
-"  " inoremap <down>  <nop>
-"  " inoremap <left>  <nop>
-"  " inoremap <right> <nop>
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
-"   Plug configuration
-" let g:airline_powerline_fonts = 1
-"
+let g:airline_theme ='nord'
 colorscheme nord
 
 :autocmd BufNewFile *.cpp 0r ~/.dotfiles/vim/templates/algoritmia.cpp

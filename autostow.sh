@@ -9,6 +9,7 @@ HOME_PKG=(
 )
 
 HOME_INDEP_PKG=(
+	bin
 )
 
 # packages going to $CONFIG
@@ -30,8 +31,7 @@ CONFIG_INDEP_PKG=(
     vifm
 )
 
-X11_PKG=(
-    xorg.conf.d
+	  X11_PKG=(
 )
 
 

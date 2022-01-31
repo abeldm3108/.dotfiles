@@ -35,6 +35,7 @@
 map w adjust_window width
 map e adjust_window best-fit
 map i navigate_index
+map s exec "python -m speedread"
 # Remappings for navigation keys
 map <C-n> navigate next
 

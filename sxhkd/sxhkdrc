@@ -28,14 +28,17 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown 
 	brightnessctl -d amdgpu_bl0 s '5%-'
 
-XF86HomePage
+XF86AudioPlay
 	playerctl --player=spotify play-pause
 
-XF86Mail
+XF86HomePage
 	playerctl --player=spotify previous
 
-XF86Calculator
+XF86Mail
 	playerctl --player=spotify next
+
+XF86Calculator
+	qalculate-gtk
 
 super + p
 	polybar-msg cmd toggle
@@ -76,7 +79,7 @@ control + alt + n
 	brave --incognito
 
 control + alt + s
-	spotify
+	LD_PRELOAD=/usr/lib/spotify-adblock.so spotify
 
 control + alt + w
 	whatsapp-nativefier-dark
