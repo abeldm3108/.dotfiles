@@ -29,6 +29,7 @@ CONFIG_INDEP_PKG=(
     rofi
     dunst
     vifm
+	inkscape-figures
 )
 
 	  X11_PKG=(
