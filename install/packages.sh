@@ -46,6 +46,7 @@ SYSTEM_PAC=(
 	xdotool
 	ttf-hack
 	qalculate-gtk
+	xclip
 )
 
 
@@ -58,6 +59,7 @@ SYSTEM_AUR=(
 	brightnessctl
 	nerd-fonts-iosevka
 	xkb-switch
+	python-xlib
 )
 
 PROG_PAC=(

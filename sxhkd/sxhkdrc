@@ -70,7 +70,10 @@ control + alt + f
 	alacritty -e vifm ~/
 
 control + alt + u
-	alacritty -e vifm ~/"Documents/Uni/Cuatri 2A"
+	alacritty -e vifm ~/"Documents/Uni/Cuatri 2B"
+
+control + alt + l
+	alacritty -e vifm ~/"Buffer"
 
 control + alt + b
 	brave --new-window
@@ -108,11 +111,11 @@ control + alt + a
 # ------desktops---------# 
 
 # focus or send to the given desktop
-super + {w,e,r,t,1,2,3,4,5,6,7,8,9,0}
-	bspc desktop -f '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14}'
+super + {w,e,r,t,y,1,2,3,4,5,6,7,8,9,0}
+	bspc desktop -f '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}'
 
-super + shift + {w,e,r,t,1,2,3,4,5,6,7,8,9,0}
-	bspc node -d '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14}' --follow
+super + shift + {w,e,r,t,y,1,2,3,4,5,6,7,8,9,0}
+	bspc node -d '^{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}' --follow
 
 #----- actions ---------#
 

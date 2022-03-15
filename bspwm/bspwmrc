@@ -4,7 +4,7 @@
 
 sxhkd &
 picom &
-feh --bg-fill ~/.dotfiles/wallpapers/dognord.jpg &
+feh --bg-fill ~/.dotfiles/wallpapers/mountains.png &
 $HOME/.config/polybar/launch.sh
 
 laptop=eDP
@@ -14,11 +14,11 @@ if [[ $(xrandr -q | grep "$external_home connected") ]]; then
     echo "Entering multi-screen setup"
     xrandr --output $external_home --primary --mode 1920x1080 --rotate normal --output $laptop --mode 1920x1080 --rotate normal --left-of $external_home
     bspc monitor $external_home -d 1 2 3 4 5 6 7 8 9 10
-    bspc monitor $laptop -d w e r t
+    bspc monitor $laptop -d w e r t y
 else
     echo "Entering single-screen setup"
     xrandr --output $laptop --primary --mode 1920x1080 --rotate normal 
-    bspc monitor $laptop -d 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+    bspc monitor $laptop -d 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 fi
 
 bspc config border_width         0
