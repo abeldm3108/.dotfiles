@@ -67,13 +67,13 @@ control + alt + t
 	.dotfiles/scripts/trans.sh
 
 control + alt + f
-	alacritty -e vifm ~/
+    bspc rule -a \* -o state=floating && alacritty -e vifm ~/
 
 control + alt + u
-	alacritty -e vifm ~/"Documents/Uni/Cuatri 2B"
+	bspc rule -a \* -o state=floating && alacritty -e vifm ~/"Documents/Uni/Cuatri 2B"
 
 control + alt + l
-	alacritty -e vifm ~/"Buffer"
+	bspc rule -a \* -o state=floating && alacritty -e vifm ~/"Buffer"
 
 control + alt + b
 	brave --new-window
@@ -103,7 +103,7 @@ control + alt + j
 	joplin-desktop
 
 control + alt + a
-	/opt/AMPL/ampl_linux-intel64/amplide/amplide
+	alacritty -e vifm ~/"Documents/Uni/Apuntes/Cuatri 2B"
 
 
 #  ------------BSPWM HOTKEYS  ------------ #

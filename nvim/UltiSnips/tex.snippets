@@ -168,6 +168,16 @@ snippet RR "R" iA
 endsnippet
 
 context "math()"
+snippet ZZ "Z" iA
+\mathbb{Z}
+endsnippet
+
+context "math()"
+snippet CC "C" iA
+\mathbb{C}
+endsnippet
+
+context "math()"
 snippet fall "forall" iA
 \ \forall
 endsnippet
@@ -211,6 +221,12 @@ endsnippet
 context "math()"
 snippet imp "implies" iA
 \implies
+endsnippet
+
+priority 200
+context "math()"
+snippet dimp "direction implies" iA
+\begin{cases} \Rightarrow \\\ \not\Leftarrow \end{cases}
 endsnippet
 
 priority 10
@@ -398,6 +414,10 @@ snippet sum "sum" w
 \sum_{n\ge 0} $0
 endsnippet
 
+snippet sumk "sumk" w
+\sum_{k\ge 1} $0
+endsnippet
+
 snippet taylor "taylor" w
 \sum_{${1:k}=${2:0}}^{${3:\infty}} ${4:c_$1} (x-a)^$1 $0
 endsnippet
@@ -528,6 +548,11 @@ snippet phi "phi" iA
 endsnippet
 
 context "math()"
+snippet psi "psi" iA
+\psi 
+endsnippet
+
+context "math()"
 snippet rho "rho" iA
 \rho 
 endsnippet
@@ -555,13 +580,28 @@ endsnippet
 
 #Caligraphic
 context "math()"
-snippet TT "calT" iA
+snippet cTT "calT" iA
 \mathcal{T}
 endsnippet
 
 context "math()"
-snippet BB "calB" iA
+snippet cCC "calC" iA
+\mathcal{C}
+endsnippet
+
+context "math()"
+snippet cBB "calB" iA
 \mathcal{B}
+endsnippet
+
+context "math()"
+snippet cPC "calPC" iA
+\mathcal{PC}
+endsnippet
+
+context "math()"
+snippet cPS "calPS" iA
+\mathcal{PS}
 endsnippet
 
 context "math()"
@@ -660,7 +700,12 @@ endsnippet
 
 context "math()"
 snippet cc "subset" Ai
-\subset 
+\subseteq 
+endsnippet
+
+context "math()"
+snippet dd "supset" Ai
+\supseteq 
 endsnippet
 
 snippet NII "not in " iA
@@ -687,14 +732,6 @@ snippet 00 "emptyset" iA
 \emptyset
 endsnippet
 
-
-snippet QQ "Q" iA
-\Q
-endsnippet
-
-snippet ZZ "Z" iA
-\Z
-endsnippet
 
 snippet <! "normal" iA
 \triangleleft 

@@ -60,3 +60,4 @@ alias emag="vim ~/Documents/Uni/Apuntes/Cuatri\ 2B/Electromagnetismo/Electromagn
 alias run="chmod +x a.out & ./a.out"
 alias gcc="g++ -Wall -O2"
 alias view="brave ~/Documents/Uni/Cuatri\ 2A/4.\ ALGO/Joc/game/Viewer/viewer.html"
+alias sagecd="cd ~/Documents/Uni/Cuatri\ 2B/4.GD/sagetest"

@@ -134,11 +134,8 @@ command vgrep vim "+grep %a"
 " program.
 
 " Pdf, PostScript & Djvu
-filextype *.pdf,*.ps,*.djvu
-  \ zathura %f %i &,
-  \ open %f &,
-fileview *.pdf
-  \ pdftotext -nopgbrk %c -
+filetype *.pdf,*.ps,*.djvu
+  \ zathura %f %i &
 
 " Audio
 filetype *.wav,*.mp3,*.flac,*.ogg,*.oga,*.m4a,*.wma,*.aac,*.3gp,*.opus,*.wv
@@ -228,13 +225,6 @@ filextype */
 "  \ {View in thunar} Thunar %f &,
 fileview .*/,*/ tree -FL 1 %f
 
-" Open all other files with default system programs
-" For *nix:
-" filetype * xdg-open %i &
-" For OS X:
-" filetype * open
-" For Windows:
-" filetype * start, explorer
 
 " All other files get free syntax highlighting
 fileview *
@@ -267,12 +257,6 @@ nmap I cw<c-a>
 nmap cc cw<c-u>
 nmap A cw<c-w>
 
-" Opening console in current directory
-nmap \t :!xterm &<cr>
-
-" Opening vim to edit .vifmrc
-nmap \c :execute ':!vim $MYVIFMRC' | restart<cr>
-
 " Toggle wrap setting on ,w key
 nmap \w :set wrap!<cr>
 
@@ -294,16 +278,6 @@ map ; :
 " Tagging
 nmap <space> tj
 
-" Resize
-nmap < <c-w><
-nmap > <c-w>>
-
-" Yet another way to go up a directory
-" because I press 'q' by mistake too often...
-map q <Left>
-
-" Single stroke to quit
-map Q :q<cr>
 
 " Print  line  number  in front of each file name
 set relativenumber
