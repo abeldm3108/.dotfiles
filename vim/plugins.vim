@@ -10,4 +10,6 @@ Plug 'lervag/vimtex'
 
 Plug 'sirver/ultisnips'
 
+Plug 'fladson/vim-kitty'
+
 call plug#end()

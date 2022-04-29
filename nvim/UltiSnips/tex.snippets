@@ -120,13 +120,13 @@ endsnippet
 
 #Difinition and theorem
 snippet dfn "definition" bA
-\begin{definition}
+\begin{definition}[$1]
 $0
 \end{definition}
 endsnippet
 
 snippet thm "theorem" bA
-\begin{theorem}
+\begin{theorem}[$1]
 $0
 \end{theorem}
 endsnippet
@@ -277,6 +277,10 @@ endsnippet
 context "math()"
 snippet cal "Cal" iA
 \mathcal{$1}$0
+endsnippet
+
+snippet mbb "mathbb" iA
+\mathbb{$1}$0
 endsnippet
 
 snippet / "Fraction" i
@@ -466,7 +470,7 @@ endsnippet
 
 context "math()"
 snippet rd "to the ... power" iA
-^{($1)}$0
+^{$1}$0
 endsnippet
 
 snippet __ "subscript" iA
@@ -535,6 +539,11 @@ endsnippet
 context "math()"
 snippet gamma "gamma" iA
 \gamma
+endsnippet
+
+context "math()"
+snippet theta "theta" iA
+\theta
 endsnippet
 
 context "math()"
@@ -617,6 +626,11 @@ endsnippet
 context "math()"
 snippet norm "norm" iA
 \|$1\|$0
+endsnippet
+
+context "math()"
+snippet abs "abs" iA
+|$1|$0
 endsnippet
 
 priority 100
@@ -804,6 +818,12 @@ priority 100
 context "math()"
 snippet "([a-zA-Z])hat" "hat" riA
 \hat{`!p snip.rv=match.group(1)`}
+endsnippet
+
+priority 10
+context "math()"
+snippet "tilde" "tilde" riA
+\tilde{$1}$0
 endsnippet
 
 

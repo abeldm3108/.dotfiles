@@ -13,6 +13,9 @@ super + shift + space
 	pkill -USR1 -x sxhkd;\
 	bspc wm -r
 
+super + shift + x 
+	pkill -USR1 -x sxhkd
+
 XF86AudioRaiseVolume
 	amixer set 'Master' 5%+
 
@@ -27,6 +30,9 @@ XF86MonBrightnessUp
 
 XF86MonBrightnessDown 
 	brightnessctl -d amdgpu_bl0 s '5%-'
+
+super + XF86MonBrightnessDown 
+	brightnessctl -d amdgpu_bl0 s '0%'
 
 XF86AudioPlay
 	playerctl --player=spotify play-pause
@@ -61,19 +67,22 @@ super + space
         rofi -show drun
 
 super + Return
-	alacritty	
+	kitty	
 
 control + alt + t
 	.dotfiles/scripts/trans.sh
 
 control + alt + f
-    bspc rule -a \* -o state=floating && alacritty -e vifm ~/
+    bspc rule -a \* -o state=floating && kitty -e vifm ~/
 
 control + alt + u
-	bspc rule -a \* -o state=floating && alacritty -e vifm ~/"Documents/Uni/Cuatri 2B"
+	bspc rule -a \* -o state=floating && kitty -e vifm ~/"Documents/Uni/Cuatri 2B"
+
+control + alt + i
+	bspc rule -a \* -o state=floating && kitty -e vifm ~/"Documents/Personal/Investigacion/Coxeter Matroids"
 
 control + alt + l
-	bspc rule -a \* -o state=floating && alacritty -e vifm ~/"Buffer"
+	bspc rule -a \* -o state=floating && kitty -e vifm ~/"Buffer"
 
 control + alt + b
 	brave --new-window
@@ -93,8 +102,8 @@ super + shift + s
 control + alt + g
 	gimp	
 
-control + alt + {y,i}
-	brave --new-window {https://www.youtube.com/,https://www.youtube.com/}
+control + alt + y
+	brave --new-window https://www.youtube.com/
 
 control + alt + m
 	brave -new-window "https://www.google.com/maps/@28.9533099,10.5943645,3z?authuser=1"
@@ -103,7 +112,7 @@ control + alt + j
 	joplin-desktop
 
 control + alt + a
-	alacritty -e vifm ~/"Documents/Uni/Apuntes/Cuatri 2B"
+	kitty -e vifm ~/"Documents/Uni/Apuntes/Cuatri 2B"
 
 
 #  ------------BSPWM HOTKEYS  ------------ #

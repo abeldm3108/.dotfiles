@@ -21,6 +21,7 @@ CONFIG_PKG=(
 CONFIG_INDEP_PKG=(
     nvim
     alacritty
+    kitty
     bspwm
     sxhkd
     polybar
