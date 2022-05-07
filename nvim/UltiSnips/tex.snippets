@@ -178,6 +178,12 @@ snippet CC "C" iA
 endsnippet
 
 context "math()"
+priority 100
+snippet SS1 "S1" iA
+\mathbb{S}^1
+endsnippet
+
+context "math()"
 snippet fall "forall" iA
 \ \forall
 endsnippet
@@ -309,6 +315,7 @@ snip.rv = stripped[0:i] + "\\frac{" + stripped[i+1:-1] + "}"
 endsnippet
 
 context "math()"
+priority 10
 snippet '([A-Za-z])(\d)' "auto subscript" wrA
 `!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
 endsnippet
@@ -539,6 +546,21 @@ endsnippet
 context "math()"
 snippet gamma "gamma" iA
 \gamma
+endsnippet
+
+context "math()"
+snippet Gamma "Gamma" iA
+\Gamma
+endsnippet
+
+context "math()"
+snippet omega "omega" iA
+\omega
+endsnippet
+
+context "math()"
+snippet Omega "Omega" iA
+\Omega
 endsnippet
 
 context "math()"
