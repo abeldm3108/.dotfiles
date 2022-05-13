@@ -3,6 +3,10 @@ syntax enable
 colorscheme delek
 set clipboard=unnamed
 
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
 set number
 set linebreak
 set showbreak=+++
@@ -48,6 +52,8 @@ filetype plugin on
 filetype indent on
 set sw=2
 set iskeyword+=:
+
+set mouse=a
 
 " set textwidth=50
 " set showmatch

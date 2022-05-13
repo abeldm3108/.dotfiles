@@ -20,13 +20,15 @@ alias blue=~"/.dotfiles/rofi/bluetooth.sh"
 alias network=~"/.dotfiles/rofi/networks.sh"
 alias bt-reset="systemctl restart bluetooth.service"
 
+function autopush() {git add --all && git commit -m $1 && git push}
+
 #Aliases for edit dotfiles
 alias dot='cd ~/.dotfiles'
 alias autostow="~/.dotfiles/autostow.sh"
 alias stowedit="vim ~/.dotfiles/autostow.sh"
 alias zshupdt="source ~/.zshrc"
 alias zshrcedit="vim ~/.dotfiles/zsh/.zshrc"
-alias aliasedit="vim ~/.dotfiles/zsh/.zsh_aliases"
+alias aliasedit="vim ~/.dotfiles/zsh/.zsh_aliases; source ~/.zshrc"
 alias alacrittyedit="vim ~/.dotfiles/alacritty/alacritty.yml"
 alias vimrcedit="vim ~/.dotfiles/vim/.vimrc"
 alias bspwmrcedit="vim ~/.dotfiles/bspwm/bspwmrc"
