@@ -36,6 +36,7 @@ map w adjust_window width
 map e adjust_window best-fit
 map i navigate_index
 map s exec "python -m speedread"
+map v exec "kitty bash -c \"nvim $FILE\""
 # Remappings for navigation keys
 map <C-n> navigate next
 
@@ -49,14 +50,11 @@ set statusbar-home-tilde  true
 set recolor               true
 set selection-clipboard   clipboard
 
-set smooth-scroll true
 
 # LAYOUT SETTINGS
 # ---------------
 set statusbar-h-padding 0
 set statusbar-v-padding 0
-set show-scrollbars     false
-
 
 
 # NORD THEME

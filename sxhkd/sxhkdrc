@@ -59,7 +59,7 @@ super + shift + n
 # -------- Keyboards -----#
 
 alt + space
-	~/.dotfiles/keyboard/switchkeyboard.sh
+	~/.dotfiles/keyboard/switchkeyboard.sh & setxkbmap -option caps:swapescape   
 
 # -------- Programs ------#
 
@@ -67,22 +67,22 @@ super + space
         rofi -show drun
 
 super + Return
-	kitty	
+    kitty
 
 control + alt + t
 	.dotfiles/scripts/trans.sh
 
 control + alt + f
-    bspc rule -a \* -o state=floating && alacritty -e vifm ~/
+    bspc rule -a \* -o state=floating && kitty -e ranger ~/
 
 control + alt + u
-	bspc rule -a \* -o state=floating && alacritty -e vifm ~/"Documents/Uni/Cuatri 2B"
+	  bspc rule -a \* -o state=floating && kitty -e ranger ~/"Documents/Uni/Cuatri 3A"
 
 control + alt + i
-	bspc rule -a \* -o state=floating && alacritty -e vifm ~/"Documents/Personal/Investigacion/Coxeter Matroids"
+	bspc rule -a \* -o state=floating && kitty -e ranger ~/"Documents/Personal/Investigacion/Coxeter Matroids"
 
 control + alt + l
-	bspc rule -a \* -o state=floating && alacritty -e vifm ~/"Buffer"
+	bspc rule -a \* -o state=floating && kitty -e ranger ~/"Buffer"
 
 control + alt + b
 	brave --new-window
@@ -115,7 +115,10 @@ control + alt + j
 	joplin-desktop
 
 control + alt + a
-	alacritty -e vifm ~/"Documents/Uni/Apuntes/Cuatri 2B"
+	kitty -e ranger ~/"Documents/Uni/Apuntes/Cuatri 2B"
+
+control + alt + r
+	~/".dotfiles/rofi/selectfile.sh"
 
 
 #  ------------BSPWM HOTKEYS  ------------ #

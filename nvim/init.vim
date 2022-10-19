@@ -9,12 +9,11 @@ set ttimeoutlen=0
 
 set nocompatible
 
-set number
+set nu
 set linebreak
 set showbreak=+++
 set tabstop=4
 set shiftwidth=4
-set relativenumber
 let g:AutoClosePairs_del = "("
 let g:AutoClosePairs_del = "["
 

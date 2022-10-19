@@ -143,6 +143,7 @@ if [ -f ~/.dotfiles/bash/.bash_aliases ]; then
 	. ~/.dotfiles/bash/.bash_aliases
 fi
 
-
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# JAVA stuff
+export _JAVA_AWT_WM_NONREPARENTING=1

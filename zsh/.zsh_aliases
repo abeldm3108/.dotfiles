@@ -2,7 +2,6 @@ alias python3='python'
 
 alias incog="unset HISTFILE"
 alias vim="nvim"
-
 alias ls='ls --color=auto'
 alias la="ls -a"
 alias ..="cd .."
@@ -26,7 +25,6 @@ function autopush() {git add --all && git commit -m $1 && git push}
 alias dot='cd ~/.dotfiles'
 alias autostow="~/.dotfiles/autostow.sh"
 alias stowedit="vim ~/.dotfiles/autostow.sh"
-alias zshupdt="source ~/.zshrc"
 alias zshrcedit="vim ~/.dotfiles/zsh/.zshrc"
 alias aliasedit="vim ~/.dotfiles/zsh/.zsh_aliases; source ~/.zshrc"
 alias alacrittyedit="vim ~/.dotfiles/alacritty/alacritty.yml"
@@ -40,26 +38,36 @@ alias start="~/.dotfiles/start.sh"
 
 alias speednews="~/.dotfiles/scripts/speednews/speednews"
 
+#Devour
+alias zathura="devour zathura"
+
 #Translate
 alias enes="trans en:es"
 alias esen="trans es:en"
 alias esca="trans es:ca"
 alias caes="trans ca:es"
 
+#Webpage
+alias reading="vim ~/Github/abeldonate.github.io/content/readings/reading-timeline/data.yml"
+
+#Libros
+alias books="$HOME/.dotfiles/rofi/selectfile.sh"
+
 #Rclone google drive backup
 alias gbk="~/.dotfiles/rclone/gbkup.sh & ~/.dotfiles/rclone/gbkdown.sh"
 
 #Uni aliases
-alias apuntes="cd ~/Documents/Uni/Apuntes/Cuatri\ 2B"
-alias compleja="vim ~/Documents/Uni/Apuntes/Cuatri\ 2B/Compleja/Compleja.tex"
-alias topo="vim ~/Documents/Uni/Apuntes/Cuatri\ 2B/Topologia/Topologia.tex"
-alias real="vim ~/Documents/Uni/Apuntes/Cuatri\ 2B/Real/Real.tex"
-alias gd="vim ~/Documents/Uni/Apuntes/Cuatri\ 2B/Geometria\ Diferencial/GeometriaDiferencial.tex"
-alias emag="vim ~/Documents/Uni/Apuntes/Cuatri\ 2B/Electromagnetismo/Electromagnetismo.tex"
+alias apuntes="cd ~/Documents/Uni/Apuntes/Cuatri\ 3A"
+alias edos="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/EDOs/EDOs.tex"
+alias prob="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/Probabilidad/Probabilidad.tex"
+alias estru="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/Estructuras\ Algebraicas/Estructuras.tex"
+alias num="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/Calculo\ Numerico/Numerico.tex"
+alias ones="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/Ondas\ Electromagneticas/Ondas.tex"
+alias senal="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/Teoria\ de\ la\ Senyal/Senyal.tex"
 
 
-#Algoritmia aliases
-alias run="chmod +x a.out & ./a.out"
-alias gcc="g++ -Wall -O2"
-alias view="brave ~/Documents/Uni/Cuatri\ 2A/4.\ ALGO/Joc/game/Viewer/viewer.html"
-alias sagecd="cd ~/Documents/Uni/Cuatri\ 2B/4.GD/sagetest"
+# VPN
+alias vpnup="sudo wg-quick up canales"
+alias vpndown="sudo wg-quick down canales"
+alias f5upc="f5fpc -s -x -t https://upclink.upc.edu"
+

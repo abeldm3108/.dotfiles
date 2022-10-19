@@ -3,7 +3,8 @@
    version="1"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
   <group
-     id="window">
+     id="window"
+     interface_mode="0">
     <group
        id="task"
        taskset="0" />
@@ -33,7 +34,7 @@
        state="1" />
     <group
        id="scrollbars"
-       state="1" />
+       state="0" />
   </group>
   <group
      id="fullscreen">
@@ -125,8 +126,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="600"
-         height="600" />
+         width="167.88879875123"
+         height="369.650898129922" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -159,12 +160,12 @@
       <eventcontext
          id="arc"
          style="fill:red;"
-         end="347.484"
+         end="0"
          start="0"
          usecurrent="1"
-         rx="3.18109"
-         ry="3.18109"
-         arc_type="1" />
+         rx="4.3066771199384"
+         ry="4.3066771199384"
+         arc_type="0" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -325,7 +326,7 @@
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
        show_sample_in_list="1"
        use_svg2="1"
-       style="line-height:1.25;font-family:Sans;font-size:17.33333333px;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none"
+       style="line-height:1.25;font-family:Sans;font-size:40px;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none"
        selcue="1"
        align_mode="1" />
     <eventcontext
@@ -343,8 +344,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="358.366"
-       y="214.185"
+       x="316.055306806863"
+       y="168.066936709553"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -406,7 +407,23 @@
        usecurrent="1" />
     <group
        id="measure"
-       fontsize="10" />
+       fontsize="10">
+      <group
+         id="measure-start"
+         x="448.461622677165"
+         y="346.409425511811" />
+      <group
+         id="measure-end"
+         x="415.947424251969"
+         y="318.506547401575" />
+    </group>
+    <eventcontext
+       id="marker"
+       selcue="1"
+       gradientdrag="1" />
+    <group
+       id="geometric"
+       mode="drag" />
   </group>
   <group
      id="palette">
@@ -527,7 +544,8 @@
   </group>
   <group
      id="colorselector"
-     page="0" />
+     page="0"
+     switcher="1" />
   <group
      id="embedded">
     <group
@@ -536,7 +554,7 @@
        panel_mode="1"
        panel_ratio="100"
        panel_wrap="0"
-       palette="Inkscape default"
+       palette="LaTeX Beamer"
        panel_border="0" />
   </group>
   <group
@@ -572,7 +590,7 @@
     <group
        id="preferences"
        state="1"
-       page="28" />
+       page="38" />
     <group
        id="gradienteditor" />
     <group
@@ -587,33 +605,37 @@
          value="custom" />
       <group
          id="defaultxdpi" />
+      <group
+         id="batchexportarea"
+         value="layer" />
     </group>
     <group
        id="save_as"
        default="org.inkscape.output.pdf.cairorenderer"
        append_extension="1"
        enable_preview="1"
-       path="/home/abeldm3108/Documents/Uni/Cuatri 2B/6.EMAG/Entregables/figures"
+       path="/home/abeldm3108/Documents/Personal/Charlas/La geometria de los irracionales/images"
        use_current_dir="1" />
     <group
        id="save_copy"
-       default=""
+       default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="" />
+       path="/home/abeldm3108/Documents/Personal/Investigacion/Coxeter Matroids/Project/Presentation/figures" />
     <group
        id="open"
        enable_preview="1"
-       path="/home/abeldm3108/Documents/Uni/Apuntes/Cuatri 2B/Electromagnetismo/figures/" />
+       path="/home/abeldm3108/Documents/Personal/Investigacion/Coxeter Matroids/Project/Presentation/figures/" />
     <group
        id="import"
        enable_preview="1"
        path=""
        ask="1"
        ask_svg="1"
-       link="link"
+       link="embed"
        scale="auto"
-       import_mode_svg="include" />
+       import_mode_svg="include"
+       forcexdpi="0" />
     <group
        id="debug"
        redirect="0" />
@@ -658,6 +680,8 @@
        id="colorpickerwindow" />
     <group
        id="undo-history" />
+    <group
+       id="objects" />
   </group>
   <group
      id="printing">
@@ -668,7 +692,11 @@
        add-label-comments="0" />
   </group>
   <group
-     id="options">
+     id="options"
+     rotationlock="1"
+     onimport="0"
+     dpifixbackup="1"
+     dpiupdatemethod="0">
     <group
        id="renderingcache"
        size="512" />
@@ -847,7 +875,8 @@
     <group
        id="maskobject"
        topmost="1"
-       remove="1" />
+       remove="1"
+       grouping="0" />
     <group
        id="blurquality"
        value="0" />
@@ -936,8 +965,8 @@
        partialdynamic="0" />
     <group
        id="boot"
-       canvas="dark"
        theme="classic"
+       canvas="dark"
        enabled="0">
       <group
          id="shown"
@@ -948,9 +977,30 @@
     <group
        id="font"
        unitType="2" />
+    <group
+       id="snapping"
+       snap-global-toggle="1"
+       snap-bbox="1"
+       snap-bbox-edge="1"
+       snap-bbox-corner="1"
+       snap-bbox-edge-midpoint="0"
+       snap-bbox-center="0"
+       simple-snap-bbox="1"
+       snap-others="1"
+       snap-object-midpoint="0"
+       snap-rotation-center="0"
+       snap-text-baseline="1"
+       snap-path-mask="1"
+       snap-path-clip="1"
+       snap-page-border="1"
+       snap-grid="1"
+       snap-guide="1" />
   </group>
   <group
      id="extensions"
+     org.inkscape.output.png.inkscape.png_bitdepth="99"
+     org.inkscape.output.png.inkscape.png_compression="6"
+     org.inkscape.output.png.inkscape.png_antialias="2"
      org.inkscape.output.pdf.cairorenderer.PDFversion="PDF-1.5"
      org.inkscape.output.pdf.cairorenderer.textToPath="LaTeX"
      org.inkscape.output.pdf.cairorenderer.area="drawing"
@@ -962,7 +1012,7 @@
      org.inkscape.effect.func_plot.drawaxis="1" />
   <group
      id="desktop"
-     style="font-size:8px;fill:#000000;stroke-width:0.99999869;text-anchor:middle;text-align:center;fill-opacity:0.94878232;stroke:#000000">
+     style="font-size:53.33333333px;fill:#8aa678;stroke-width:1.51181102;text-anchor:middle;text-align:center;line-height:1.15;fill-rule:evenodd;stroke:#000000">
     <group
        width="1906"
        height="1027"
@@ -990,11 +1040,20 @@
      id="toolbox"
      icononly="1"
      secondary="1"
+     simplesnap="0"
      small="1">
     <group
        id="tools"
        icononly="1"
-       small="0" />
+       small="0"
+       iconsize="16"
+       width="32">
+      <group
+         id="buttons" />
+    </group>
+    <group
+       id="controlbars"
+       iconsize="16" />
   </group>
   <group
      id="iconpreview"
@@ -1070,14 +1129,15 @@
   <group
      id="theme"
      defaultPreferDarkTheme="0"
-     defaultGtkTheme="Adawita"
      defaultIconTheme="Adwaita"
-     symbolicIcons="0"
+     defaultGtkTheme="Adawita"
+     narrowSpinButton="1"
      preferDarkTheme="0"
      darkTheme="0"
-     gtkTheme="Adwaita"
+     symbolicIcons="0"
      symbolicDefaultBaseColors="1"
      symbolicDefaultHighColors="1"
+     gtkTheme="Adwaita"
      menuIcons_canvas="0"
      menuIcons_layers="0"
      menuIcons_objects="0"
@@ -1085,4 +1145,9 @@
   <group
      id="live_effects"
      flattening="0" />
+  <group
+     id="statusbar">
+    <group
+       id="visibility" />
+  </group>
 </inkscape>

@@ -13,7 +13,7 @@ endglobal
 
 
 snippet template "Basic template" b
-\documentclass{myclass}
+\documentclass[leqno]{article}
 \usepackage{verbatim}
 \usepackage{array}
 \usepackage{listings}
@@ -23,8 +23,7 @@ snippet template "Basic template" b
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
-\usepackage{multicol}
-\usepackage{mathtools}
+\usepackage{multicol} \usepackage{mathtools}
 \usepackage{amsmath}
 \usepackage{wrapfig}
 \usepackage{amssymb}
@@ -33,6 +32,7 @@ snippet template "Basic template" b
 \usepackage{eso-pic}
 \usepackage{pgf}
 \usepackage{tikz}
+\usepackage{tikz-cd}
 \usepackage{graphicx}
 
 % figure support
@@ -43,20 +43,25 @@ snippet template "Basic template" b
 \usepackage{transparent}
 \usepackage{xcolor}
 
+% geometry
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+% paragraph length
 \setlength{\parindent}{0em}
 \setlength{\parskip}{1em}
 
-\newtheorem*{definition}{Definition}
 \newtheorem*{theorem}{Theorem}
+\newtheorem*{lemma}{Lemma}
 \newtheorem*{proposition}{Proposition}
+\newtheorem*{definition}{Definition}
+\newtheorem*{observation}{Observation}
 
 \newcommand{\incfig}[1]{%
 \center
 \def\svgwidth{0.9\columnwidth}
 \import{./figures/}{#1.pdf_tex}
 }
-
-
 \newcommand{\incimg}[1]{%
 \center
 \includegraphics[width=0.9\columnwidth]{images/#1}
@@ -64,6 +69,8 @@ snippet template "Basic template" b
 \pdfsuppresswarningpagegroup=1
 
 \title{a}
+\author{Abel Doñate Muñoz}
+\date{}
 
 \begin{document}
 \maketitle
@@ -133,7 +140,7 @@ endsnippet
 
 snippet prp "proposition" bA
 \begin{proposition}
-$0
+$0 
 \end{proposition}
 endsnippet
 
@@ -188,9 +195,27 @@ snippet fall "forall" iA
 \ \forall
 endsnippet
 
+context "math()"
+priority 300
+snippet d... "ddots" iA
+\ddots
+endsnippet
+
+context "math()"
+priority 300
+snippet c... "cdots" iA
+\cdots
+endsnippet
+
+context "math()"
 priority 100
 snippet ... "ldots" iA
 \ldots
+endsnippet
+
+context "math()"
+snippet :. "vdots" iA
+\vdots
 endsnippet
 
 snippet fig "Figure environment" b
@@ -226,7 +251,12 @@ endsnippet
 
 context "math()"
 snippet imp "implies" iA
-\implies
+\Rightarrow
+endsnippet
+
+context "math()"
+snippet nimp "not implies" iA
+\nRightarrow
 endsnippet
 
 priority 200
@@ -271,7 +301,7 @@ endsnippet
 snippet ali "Align" bA
 \begin{align*}
 	${1:${VISUAL}}
-.\end{align*}
+\end{align*}
 endsnippet
 
 
@@ -283,6 +313,11 @@ endsnippet
 context "math()"
 snippet cal "Cal" iA
 \mathcal{$1}$0
+endsnippet
+
+context "math()"
+snippet frak "Frak" iA
+\mathfrak{$1}$0
 endsnippet
 
 snippet mbb "mathbb" iA
@@ -384,7 +419,7 @@ snippet bmat "bmat" iA
 endsnippet
 
 context "math()"
-snippet () "left( right)" iA
+snippet bigpar "left( right)" iA
 \left( ${1:$VISUAL} \right) $0
 endsnippet
 
@@ -446,8 +481,23 @@ snippet prod "product" w
 endsnippet
 
 context "math()"
-snippet dif "d/dx" iA
-\frac{\partial ${1:V}}{\partial ${2:x}} $0
+snippet difx "d/dx" iA
+\frac{d $1}{d x} $0
+endsnippet
+
+context "math()"
+snippet dift "d/dt" iA
+\frac{d $1}{d t} $0
+endsnippet
+
+context "math()"
+snippet pdifx "d/dx" iA
+\frac{\partial $1}{\partial x} $0
+endsnippet
+
+context "math()"
+snippet pdift "d/dt" iA
+\frac{\partial $1}{\partial t} $0
 endsnippet
 
 context "math()"
@@ -549,23 +599,33 @@ snippet gamma "gamma" iA
 endsnippet
 
 context "math()"
+snippet delta "delta" iA
+\delta
+endsnippet
+
+context "math()"
 snippet Gamma "Gamma" iA
-\Gamma
+\Gamma 
+endsnippet
+
+context "math()"
+snippet Delta "Delta" iA
+\Delta 
 endsnippet
 
 context "math()"
 snippet omega "omega" iA
-\omega
+\omega 
 endsnippet
 
 context "math()"
 snippet Omega "Omega" iA
-\Omega
+\Omega 
 endsnippet
 
 context "math()"
 snippet theta "theta" iA
-\theta
+\theta 
 endsnippet
 
 context "math()"
@@ -640,6 +700,11 @@ snippet xx "cross" iA
 \times 
 endsnippet
 
+context "math()"
+snippet conv "convolution" iA
+\ast 
+endsnippet
+
 priority 100
 snippet ** "cdot" iA
 \cdot 
@@ -657,14 +722,25 @@ endsnippet
 
 priority 100
 context "math()"
-snippet '(?<!\\)(sin|cos|arccot|cot|csc|ln|log|exp|star|perp)' "ln" rwA
+snippet '(?<!\\)(sin|cos|arccot|cot|csc|ln|log|star|perp)' "ln" rwA
 \\`!p snip.rv = match.group(1)`
+endsnippet
+
+context "math()"
+snippet exp "exponential" wA
+e^{j\omega t$1}$0
 endsnippet
 
 priority 300
 context "math()"
 snippet dint "integral" wA
 \int_{${1:-\infty}}^{${2:\infty}} ${3:${VISUAL}} $0
+endsnippet
+
+priority 300
+context "math()"
+snippet rint "integral" wA
+\int_{-\infty}^{infty} $0
 endsnippet
 
 priority 200
@@ -710,11 +786,6 @@ snippet inv "inverse" iA
 endsnippet
 
 context "math()"
-snippet com "complement" iA
-^{c}
-endsnippet
-
-context "math()"
 snippet >> ">>" iA
 \gg
 endsnippet
@@ -732,6 +803,11 @@ endsnippet
 context "math()"
 snippet hom "homeo" iA
 \cong 
+endsnippet
+
+context "math()"
+snippet isom "isom" iA
+\simeq 
 endsnippet
 
 context "math()"
@@ -855,4 +931,14 @@ snippet TT "T" iA
 \mathcal{T}
 endsnippet
 
+#Matroides
+context "math()"
+snippet BS "basis" iA
+\mathcal{B}(M)
+endsnippet
+
+context "math()"
+snippet cube "hypercube" iA
+\square
+endsnippet
 # vim:ft=snippets

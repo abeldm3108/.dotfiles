@@ -19,3 +19,8 @@ fi
 
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
+export PATH=/home/abeldm3108/bin/:$PATH
+
+# JAVA stuff
+export _JAVA_AWT_WM_NONREPARENTING=1
+

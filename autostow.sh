@@ -32,6 +32,7 @@ CONFIG_INDEP_PKG=(
     vifm
 	inkscape	
 	inkscape-figures
+	ranger
 )
 
 	  X11_PKG=(

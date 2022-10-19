@@ -8,11 +8,11 @@ if has("autocmd")
 endif
 
 set number
+set nu
 set linebreak
 set showbreak=+++
 set tabstop=4
 set shiftwidth=4
-set relativenumber
 let g:AutoClosePairs_del = "("
 let g:AutoClosePairs_del = "["
 
@@ -88,6 +88,9 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 imap <C-BS> <C-W>
+
+noremap <Leader>Y "+y
+
 "   Plug configuration
 " let g:airline_powerline_fonts = 1
 "

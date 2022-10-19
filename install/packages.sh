@@ -4,7 +4,7 @@ user="abeldm3108"
 
 SYSTEM_PAC=(
 	base-devel
-	git
+	git git-lfs
 	yay
 	bspwm
 	sxhkd

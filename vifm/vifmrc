@@ -135,7 +135,7 @@ command vgrep vim "+grep %a"
 
 " Pdf, PostScript & Djvu
 filetype *.pdf,*.ps,*.djvu
-  \ zathura %f %i &
+  \devour zathura %f %i &
 
 " Audio
 filetype *.wav,*.mp3,*.flac,*.ogg,*.oga,*.m4a,*.wma,*.aac,*.3gp,*.opus,*.wv
