@@ -66,5 +66,5 @@ get_session(){
 exec $(get_session "$1")
 
 sxhkd &
-/home/abeldm3108/.dotfiles/start.sh &
+/home/abel/.dotfiles/start.sh &
 exec bspwm

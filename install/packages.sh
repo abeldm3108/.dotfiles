@@ -1,6 +1,6 @@
 #!/bin/bash
 
-user="abeldm3108"
+user="abel"	
 
 SYSTEM_PAC=(
 	base-devel
@@ -14,7 +14,7 @@ SYSTEM_PAC=(
 	stow
 	feh
 	polybar
-	alacritty
+	alacritty kitty
 	zsh
 	oh-my-zsh
 	manjaro-zsh-config
@@ -36,7 +36,7 @@ SYSTEM_PAC=(
 	xorg-xev
 	translate-shell
 	flameshot
-	brave
+	ranger
 	vifm
 	alsa-utils
 	playerctl
@@ -47,6 +47,7 @@ SYSTEM_PAC=(
 	ttf-hack
 	qalculate-gtk
 	xclip
+	bluez bluez-utils
 )
 
 
@@ -63,6 +64,7 @@ SYSTEM_AUR=(
 )
 
 PROG_PAC=(
+	brave-browser
     audacity
     discord
     gimp
@@ -72,8 +74,8 @@ PROG_PAC=(
 )
 
 PROG_AUR=(
-	whatsapp-nativefier-dark
-	todoist
+	whatsapp-nativefier
+	todoist-nativefier
 	spotify spotify-adblock-git spicetify-themes-git spicetify-cli
 	google-calendar-nativefier
 	joplin-desktop
