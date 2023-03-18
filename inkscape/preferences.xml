@@ -34,7 +34,7 @@
        state="1" />
     <group
        id="scrollbars"
-       state="0" />
+       state="1" />
   </group>
   <group
      id="fullscreen">
@@ -126,12 +126,15 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="167.88879875123"
-         height="369.650898129922" />
+         width="782.293230191929"
+         height="618.134707953986"
+         ry="42.6515570212537"
+         rx="0.915855741876317" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
-         usecurrent="1">
+         usecurrent="1"
+         persp="perspective6815">
         <side
            id="XYfront"
            style="fill:#8686bf;stroke:none;stroke-linejoin:round;"
@@ -160,18 +163,19 @@
       <eventcontext
          id="arc"
          style="fill:red;"
-         end="0"
-         start="0"
+         end="180.114124392743"
+         start="0.125765525186255"
          usecurrent="1"
-         rx="4.3066771199384"
-         ry="4.3066771199384"
-         arc_type="0" />
+         rx="194.90566463921"
+         ry="46.9940834345772"
+         arc_type="1" />
       <eventcontext
          id="star"
          magnitude="5"
          style="fill:yellow;"
          usecurrent="1"
-         proportion="0.5" />
+         proportion="0.421165326390225"
+         isflatsided="0" />
       <eventcontext
          id="spiral"
          style="fill:none;stroke:black"
@@ -344,8 +348,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="316.055306806863"
-       y="168.066936709553"
+       x="599.517517659409"
+       y="291.580923337715"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -404,7 +408,10 @@
     <eventcontext
        id="paintbucket"
        style="fill:#a0a0a0;stroke:none;"
-       usecurrent="1" />
+       usecurrent="1"
+       threshold="0"
+       offset="-2.50119444444444"
+       offsetunits="mm" />
     <group
        id="measure"
        fontsize="10">
@@ -544,7 +551,7 @@
   </group>
   <group
      id="colorselector"
-     page="0"
+     page="2"
      switcher="1" />
   <group
      id="embedded">
@@ -563,7 +570,7 @@
        id="toolbox" />
     <group
        id="fillstroke"
-       page="2" />
+       page="1" />
     <group
        id="filtereffects" />
     <group
@@ -590,7 +597,7 @@
     <group
        id="preferences"
        state="1"
-       page="38" />
+       page="7" />
     <group
        id="gradienteditor" />
     <group
@@ -599,7 +606,8 @@
        id="export"
        default=""
        append_extension="1"
-       path="">
+       path=""
+       defaultopts="1">
       <group
          id="exportarea"
          value="custom" />
@@ -611,10 +619,10 @@
     </group>
     <group
        id="save_as"
-       default="org.inkscape.output.pdf.cairorenderer"
+       default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/abeldm3108/Documents/Personal/Charlas/La geometria de los irracionales/images"
+       path="/home/abel/Pictures/Samarretes FME/models"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -625,11 +633,11 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/abeldm3108/Documents/Personal/Investigacion/Coxeter Matroids/Project/Presentation/figures/" />
+       path="/home/abel/Pictures/Samarretes FME/assets/" />
     <group
        id="import"
        enable_preview="1"
-       path=""
+       path="/home/abel/Pictures/Samarretes FME/assets/"
        ask="1"
        ask_svg="1"
        link="embed"
@@ -681,7 +689,8 @@
     <group
        id="undo-history" />
     <group
-       id="objects" />
+       id="objects"
+       layers_only="0" />
   </group>
   <group
      id="printing">
@@ -729,7 +738,7 @@
        value="12" />
     <group
        id="cursortolerance"
-       value="8.0" />
+       value="8" />
     <group
        id="dragtolerance"
        value="4.0" />
@@ -1009,10 +1018,14 @@
      org.inkscape.effect.func_plot.__live_effect__="0"
      org.inkscape.effect.func_plot.polar="0"
      org.inkscape.effect.func_plot.samples="7"
-     org.inkscape.effect.func_plot.drawaxis="1" />
+     org.inkscape.effect.func_plot.drawaxis="1"
+     org.inkscape.generate.pdf_latex.font_size="100"
+     org.inkscape.input.svg.scale="auto"
+     org.inkscape.generate.pdf_latex.page="basic"
+     org.inkscape.generate.pdf_latex.formule="|f(y)-f(x)|\leq |y-x| " />
   <group
      id="desktop"
-     style="font-size:53.33333333px;fill:#8aa678;stroke-width:1.51181102;text-anchor:middle;text-align:center;line-height:1.15;fill-rule:evenodd;stroke:#000000">
+     style="font-size:85.33333333px;fill:none;stroke-width:0;text-anchor:middle;text-align:center;line-height:1.15;fill-rule:evenodd;-inkscape-font-specification:'Act of Rejection';font-family:'Act of Rejection';stroke-miterlimit:4.4;stroke-linejoin:round;stroke-linecap:round;paint-order:stroke markers fill;stroke:#000000">
     <group
        width="1906"
        height="1027"
@@ -1130,7 +1143,7 @@
      id="theme"
      defaultPreferDarkTheme="0"
      defaultIconTheme="Adwaita"
-     defaultGtkTheme="Adawita"
+     defaultGtkTheme="Adwaita"
      narrowSpinButton="1"
      preferDarkTheme="0"
      darkTheme="0"
@@ -1150,4 +1163,7 @@
     <group
        id="visibility" />
   </group>
+  <group
+     id="gradient-edit"
+     stoplist="1" />
 </inkscape>

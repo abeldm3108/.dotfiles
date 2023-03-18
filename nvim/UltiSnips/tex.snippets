@@ -106,8 +106,25 @@ $0
 endsnippet
 
 context "math()"
+snippet ket "bracket" iA
+| $1 \rangle $0
+endsnippet
+
+context "math()"
 snippet bra "bracket" iA
-\langle $1 \rangle $0
+\langle $1 | $0
+endsnippet
+
+context "math()"
+priority 100
+snippet bket "bracket" iA
+\langle $1 | $2 \rangle $0
+endsnippet
+
+context "math()"
+priority 200
+snippet brket "bracket" iA
+\langle $1 | $2 | $3 \rangle $0
 endsnippet
 
 snippet mpg "minipage" bA
@@ -160,7 +177,7 @@ snippet tbf "bold" iA
 \textbf{$1}$0
 endsnippet
 
-snippet tit "italic" iA
+snippet tit "italic" wA
 \textit{$1}$0
 endsnippet
 
@@ -419,8 +436,13 @@ snippet bmat "bmat" iA
 endsnippet
 
 context "math()"
-snippet bigpar "left( right)" iA
+snippet big( "left( right)" iA
 \left( ${1:$VISUAL} \right) $0
+endsnippet
+
+context "math()"
+snippet big[ "left( right)" iA
+\left[ ${1:$VISUAL} \right] $0
 endsnippet
 
 snippet lr "left( right)" i
@@ -584,6 +606,11 @@ snippet sigma "sigma" iA
 endsnippet
 
 context "math()"
+snippet Sigma "Sigma" iA
+\Sigma 
+endsnippet
+
+context "math()"
 snippet alpha "alpha" iA
 \alpha 
 endsnippet
@@ -641,6 +668,11 @@ endsnippet
 context "math()"
 snippet psi "psi" iA
 \psi 
+endsnippet
+
+context "math()"
+snippet Psi "psi" iA
+\Psi 
 endsnippet
 
 context "math()"
@@ -786,6 +818,11 @@ snippet inv "inverse" iA
 endsnippet
 
 context "math()"
+snippet daga "daga" iA
+^\dagger
+endsnippet
+
+context "math()"
 snippet >> ">>" iA
 \gg
 endsnippet
@@ -884,7 +921,7 @@ endsnippet
 
 priority 10
 context "math()"
-snippet "bar" "bar" riA
+snippet bar "bar" wA
 \overline{$1}$0
 endsnippet
 
@@ -898,12 +935,6 @@ priority 11
 context "math()"
 snippet "ddot" "ddot" riA
 \ddot{$1}$0
-endsnippet
-
-priority 100
-context "math()"
-snippet "([a-zA-Z])bar" "bar" riA
-\overline{`!p snip.rv=match.group(1)`}
 endsnippet
 
 priority 10

@@ -34,7 +34,6 @@ alias sxhkdrcedit="vim ~/.dotfiles/sxhkd/sxhkdrc"
 alias picomedit="vim ~/.dotfiles/picom/picom.conf"
 alias packagesedit="vim ~/.dotfiles/install/packages.sh"
 alias snippetsedit="vim ~/.dotfiles/nvim/UltiSnips/tex.snippets"
-alias start="~/.dotfiles/start.sh"
 
 alias speednews="~/.dotfiles/scripts/speednews/speednews"
 
@@ -48,7 +47,7 @@ alias esca="trans es:ca"
 alias caes="trans ca:es"
 
 #Webpage
-alias reading="vim ~/Github/abeldonate.github.io/content/readings/reading-timeline/data.yml"
+alias reading="vim ~/Github/abeldonate.github.io/content/readings/timeline/data.yml"
 
 #Libros
 alias books="$HOME/.dotfiles/rofi/selectfile.sh"
@@ -57,13 +56,11 @@ alias books="$HOME/.dotfiles/rofi/selectfile.sh"
 alias gbk="~/.dotfiles/rclone/gbkup.sh & ~/.dotfiles/rclone/gbkdown.sh"
 
 #Uni aliases
-alias apuntes="cd ~/Documents/Uni/Apuntes/Cuatri\ 3A"
-alias edos="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/EDOs/EDOs.tex"
-alias prob="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/Probabilidad/Probabilidad.tex"
-alias estru="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/Estructuras\ Algebraicas/Estructuras.tex"
-alias num="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/Calculo\ Numerico/Numerico.tex"
-alias ones="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/Ondas\ Electromagneticas/Ondas.tex"
-alias senal="vim ~/Documents/Uni/Apuntes/Cuatri\ 3A/Teoria\ de\ la\ Senyal/Senyal.tex"
+alias apuntes="cd ~/Documents/Uni/Apuntes/Cuatri\ 3B"
+alias estad="vim ~/Documents/Uni/Apuntes/Cuatri\ 3B/Estadistica/FormularioEstadistica.tex"
+alias EDPs="vim ~/Documents/Uni/Apuntes/Cuatri\ 3B/EDPs/FormularioEDPs.tex"
+alias control="vim ~/Documents/Uni/Apuntes/Cuatri\ 3B/Teoria\ de\ Control/TeoriaControl.tex"
+alias res="vim ~/Documents/Personal/Investigacion/Connectivity\ constant/Work/notes/Notes.tex"
 
 
 # VPN

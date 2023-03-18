@@ -18,8 +18,7 @@ SYSTEM_PAC=(
 	zsh
 	oh-my-zsh
 	manjaro-zsh-config
-	zathura
-	zathura-pdf-mupdf
+	zathura zathura-pdf-mupdf
 	firefox
 	dmenu
 	networkmanager
@@ -53,7 +52,6 @@ SYSTEM_PAC=(
 
 SYSTEM_AUR=(
     neovim-plug nord-vim vim-airline-themes
-	picom-rounded-corners
 	systray-x-git
 	betterlockscreen
 	i3lock-color	
@@ -61,9 +59,12 @@ SYSTEM_AUR=(
 	nerd-fonts-iosevka
 	xkb-switch
 	python-xlib
+	syncthing
+	devour
 )
 
 PROG_PAC=(
+    cheese
 	brave-browser
     audacity
     discord
@@ -79,6 +80,7 @@ PROG_AUR=(
 	spotify spotify-adblock-git spicetify-themes-git spicetify-cli
 	google-calendar-nativefier
 	joplin-desktop
+	mailspring
 )
 
 function intro {

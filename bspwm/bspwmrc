@@ -3,9 +3,9 @@
 #~/.dotfiles/start.sh &
 
 sxhkd &
-#picom &
 feh --bg-fill ~/.dotfiles/wallpapers/nord_forest.png &
-$HOME/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh &
+/home/abel/.dotfiles/start.sh & 
 
 laptop=eDP
 external_home=HDMI-A-0
@@ -35,9 +35,9 @@ bspc config pointer_action3 resize_corner
 
 
 bspc rule -a Zathura state=tiled
-bspc rule -a Todoist desktop='^4' follow=off
-bspc rule -a whatsapp-nativefier-d52542 desktop='^1' follow=off
-bspc rule -a telegram-desktop='^1' follow=off
+bspc rule -a todoist-nativefier-409272 desktop='^4' follow=off
+bspc rule -a whatsapp-nativefier-d40211 desktop='^1' follow=off
+bspc rule -a TelegramDesktop desktop='^1' follow=off
 bspc rule -a spotify desktop='^2' follow=off
 
 bspc rule -a Kupfer.py focus=on

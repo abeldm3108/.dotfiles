@@ -59,7 +59,8 @@ super + shift + n
 # -------- Keyboards -----#
 
 alt + space
-	~/.dotfiles/keyboard/switchkeyboard.sh & setxkbmap -option caps:swapescape   
+	setxkbmap -option caps:swapescape   
+	#~/.dotfiles/keyboard/switchkeyboard.sh & setxkbmap -option caps:swapescape   
 
 # -------- Programs ------#
 
@@ -73,16 +74,16 @@ control + alt + t
 	.dotfiles/scripts/trans.sh
 
 control + alt + f
-    bspc rule -a \* -o state=floating && kitty -e ranger ~/
+    kitty -e ranger ~/
 
 control + alt + u
-	  bspc rule -a \* -o state=floating && kitty -e ranger ~/"Documents/Uni/Cuatri 3A"
+	kitty -e ranger ~/"Documents/Uni/Cuatri 3B"
 
 control + alt + i
-	bspc rule -a \* -o state=floating && kitty -e ranger ~/"Documents/Personal/Investigacion/Coxeter Matroids"
+	kitty -e ranger ~/"Documents/Personal/Investigacion/Self Avoiding Walks"
 
 control + alt + l
-	bspc rule -a \* -o state=floating && kitty -e ranger ~/"Buffer"
+	kitty -e ranger ~/"Buffer"
 
 control + alt + b
 	brave --new-window
@@ -92,9 +93,6 @@ control + alt + n
 
 control + alt + s
 	LD_PRELOAD=/usr/lib/spotify-adblock.so spotify
-
-control + alt + w
-	whatsapp-nativefier-dark
 
 super + shift + s
 	~/.dotfiles/start.sh
@@ -109,7 +107,7 @@ control + shift + y
 	brave --new-window --incognito https://www.youtube.com/
 
 control + alt + m
-	brave -new-window "https://www.google.com/maps/@28.9533099,10.5943645,3z?authuser=1"
+	brave -new-window "https://www.google.com/maps/@28.9533099,10.5943645,3z?authuser=0"
 
 control + alt + j
 	joplin-desktop
