@@ -80,7 +80,7 @@ control + alt + u
 	kitty -e ranger ~/"Documents/Uni/Cuatri 3B"
 
 control + alt + i
-	kitty -e ranger ~/"Documents/Personal/Investigacion/Self Avoiding Walks"
+	kitty -e ranger ~/"Documents/Personal/Investigacion/Bounded Cohomology"
 
 control + alt + l
 	kitty -e ranger ~/"Buffer"
@@ -95,7 +95,7 @@ control + alt + s
 	LD_PRELOAD=/usr/lib/spotify-adblock.so spotify
 
 super + shift + s
-	~/.dotfiles/start.sh
+	~/.dotfiles/scripts/keyboard.sh
 
 control + alt + g
 	gimp	

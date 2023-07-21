@@ -348,8 +348,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="599.517517659409"
-       y="291.580923337715"
+       x="246.944800586339"
+       y="226.177691185333"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -417,8 +417,8 @@
        fontsize="10">
       <group
          id="measure-start"
-         x="448.461622677165"
-         y="346.409425511811" />
+         x="12.3563974026112"
+         y="7.49301070012762" />
       <group
          id="measure-end"
          x="415.947424251969"
@@ -570,7 +570,7 @@
        id="toolbox" />
     <group
        id="fillstroke"
-       page="1" />
+       page="2" />
     <group
        id="filtereffects" />
     <group
@@ -622,7 +622,7 @@
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/abel/Pictures/Samarretes FME/models"
+       path="/home/abel/Documents/Uni/Cuatri 3B/4.FISES/Apuntes/figures"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -1019,13 +1019,13 @@
      org.inkscape.effect.func_plot.polar="0"
      org.inkscape.effect.func_plot.samples="7"
      org.inkscape.effect.func_plot.drawaxis="1"
-     org.inkscape.generate.pdf_latex.font_size="100"
+     org.inkscape.generate.pdf_latex.font_size="25"
      org.inkscape.input.svg.scale="auto"
      org.inkscape.generate.pdf_latex.page="basic"
-     org.inkscape.generate.pdf_latex.formule="|f(y)-f(x)|\leq |y-x| " />
+     org.inkscape.generate.pdf_latex.formule="$t_{\alpha/2}$" />
   <group
      id="desktop"
-     style="font-size:85.33333333px;fill:none;stroke-width:0;text-anchor:middle;text-align:center;line-height:1.15;fill-rule:evenodd;-inkscape-font-specification:'Act of Rejection';font-family:'Act of Rejection';stroke-miterlimit:4.4;stroke-linejoin:round;stroke-linecap:round;paint-order:stroke markers fill;stroke:#000000">
+     style="font-size:85.33333333px;fill:none;stroke-width:1.0015748;text-anchor:middle;text-align:center;line-height:1.15;fill-rule:evenodd;-inkscape-font-specification:'Act of Rejection';font-family:'Act of Rejection';stroke-miterlimit:4.4;stroke-linejoin:round;stroke-linecap:round;paint-order:stroke markers fill;stroke:#000000;stroke-dasharray:2.0031495,1.00157475">
     <group
        width="1906"
        height="1027"
