@@ -56,7 +56,7 @@ alias books="$HOME/.dotfiles/rofi/selectfile.sh"
 alias gbk="~/.dotfiles/rclone/gbkup.sh & ~/.dotfiles/rclone/gbkdown.sh"
 
 #Uni aliases
-alias apuntes="cd ~/Documents/Uni/Apuntes/Cuatri\ 3B"
+alias apuntes="cd ~/Documents/Uni/Apuntes/Cuatri\ 4A"
 alias estad="vim ~/Documents/Uni/Apuntes/Cuatri\ 3B/Estadistica/FormularioEstadistica.tex"
 alias EDPs="vim ~/Documents/Uni/Apuntes/Cuatri\ 3B/EDPs/FormularioEDPs.tex"
 alias control="vim ~/Documents/Uni/Apuntes/Cuatri\ 3B/Teoria\ de\ Control/TeoriaControl.tex"

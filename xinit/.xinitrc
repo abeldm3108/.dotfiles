@@ -66,5 +66,4 @@ get_session(){
 exec $(get_session "$1")
 
 sxhkd &
-syncthing &
 exec bspwm

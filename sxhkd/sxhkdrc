@@ -77,10 +77,10 @@ control + alt + f
     kitty -e ranger ~/
 
 control + alt + u
-	kitty -e ranger ~/"Documents/Uni/Cuatri 3B"
+	kitty -e ranger ~/"Documents/Uni/Cuatri 4A"
 
 control + alt + i
-	kitty -e ranger ~/"Documents/Personal/Investigacion/Bounded Cohomology"
+	kitty -e ranger ~/"Documents/Personal/Investigacion/Local Cohomology"
 
 control + alt + l
 	kitty -e ranger ~/"Buffer"

@@ -57,6 +57,7 @@ snippet template "Basic template" b
 \newtheorem*{definition}{Definition}
 \newtheorem*{observation}{Observation}
 
+\newcommand{\com}[1]{\textcolor{red}{#1}}
 \newcommand{\incfig}[1]{%
 \center
 \def\svgwidth{0.9\columnwidth}
@@ -116,6 +117,11 @@ snippet bra "bracket" iA
 endsnippet
 
 context "math()"
+snippet ave "bracket" iA
+\langle $1 \rangle $0
+endsnippet
+
+context "math()"
 priority 100
 snippet bket "bracket" iA
 \langle $1 | $2 \rangle $0
@@ -149,10 +155,22 @@ $0
 \end{definition}
 endsnippet
 
+snippet exp "example" bA
+\begin{example}[$1]
+$0
+\end{example}
+endsnippet
+
 snippet thm "theorem" bA
 \begin{theorem}[$1]
 $0
 \end{theorem}
+endsnippet
+
+snippet obs "observation" bA
+\begin{observation}[$1]
+$0
+\end{observation}
 endsnippet
 
 snippet prp "proposition" bA
@@ -197,8 +215,18 @@ snippet ZZ "Z" iA
 endsnippet
 
 context "math()"
+snippet QQ "Q" iA
+\mathbb{Q}
+endsnippet
+
+context "math()"
 snippet CC "C" iA
 \mathbb{C}
+endsnippet
+
+context "math()"
+snippet FF "F" iA
+\mathbb{F}
 endsnippet
 
 context "math()"
@@ -210,6 +238,11 @@ endsnippet
 context "math()"
 snippet fall "forall" iA
 \ \forall
+endsnippet
+
+context "math()"
+snippet ·· "ddots" iA
+\ddot{}
 endsnippet
 
 context "math()"
@@ -271,6 +304,12 @@ snippet imp "implies" iA
 \Rightarrow
 endsnippet
 
+context "math()"
+snippet bul "bullet" iA
+\bullet
+endsnippet
+
+priority 200
 context "math()"
 snippet nimp "not implies" iA
 \nRightarrow
@@ -335,6 +374,11 @@ endsnippet
 context "math()"
 snippet frak "Frak" iA
 \mathfrak{$1}$0
+endsnippet
+
+context "math()"
+snippet pfra "pFrak" iA
+\mathfrak{p}
 endsnippet
 
 snippet mbb "mathbb" iA
@@ -528,7 +572,7 @@ snippet partial "partial" iA
 endsnippet
 
 context "math()"
-snippet sq "\sqrt{}" iA
+snippet sq "\sqrt{}" wA
 \sqrt{${1:${VISUAL}}} $0
 endsnippet
 
@@ -548,9 +592,16 @@ snippet td "to the ... power" iA
 endsnippet
 
 context "math()"
-snippet rd "to the ... power" iA
+snippet rd "to the ... power" wA
 ^{$1}$0
 endsnippet
+
+priority 200
+context "math()"
+snippet ord "order" wA
+\ord
+endsnippet
+
 
 snippet __ "subscript" iA
 _{$1}$0
@@ -587,6 +638,11 @@ snippet II "in" iA
 \in 
 endsnippet
 
+context "math()"
+snippet comp "comp" iA
+\circ 
+endsnippet
+
 #Vector Calculus
 context "math()"
 snippet div "divergence" iA
@@ -596,6 +652,11 @@ endsnippet
 context "math()"
 snippet curl "curl" iA
 \nabla\times 
+endsnippet
+
+context "math()"
+snippet hbar "hbar" iA
+\hbar 
 endsnippet
 
 #---------------------------------------------------
@@ -656,6 +717,16 @@ snippet theta "theta" iA
 endsnippet
 
 context "math()"
+snippet zeta "zeta" iA
+\zeta 
+endsnippet
+
+context "math()"
+snippet kappa "kappa" iA
+\kappa 
+endsnippet
+
+context "math()"
 snippet nabla "nabla" iA
 \nabla 
 endsnippet
@@ -686,8 +757,23 @@ snippet tau "tau" iA
 endsnippet
 
 context "math()"
+snippet pi "pi" iA
+\pi 
+endsnippet
+
+context "math()"
+snippet mu "mu" iA
+\mu 
+endsnippet
+
+context "math()"
 snippet eps "eps" iA
 \varepsilon 
+endsnippet
+
+context "math()"
+snippet lambda "lambda" iA
+\lambda 
 endsnippet
 
 context "math()"
@@ -733,6 +819,11 @@ snippet xx "cross" iA
 endsnippet
 
 context "math()"
+snippet tensor "tensor" iA
+\otimes 
+endsnippet
+
+context "math()"
 snippet conv "convolution" iA
 \ast 
 endsnippet
@@ -773,12 +864,6 @@ priority 300
 context "math()"
 snippet rint "integral" wA
 \int_{-\infty}^{infty} $0
-endsnippet
-
-priority 200
-context "math()"
-snippet '(?<!\\)(arcsin|arccos|arctan|arccot|arccsc|arcsec|pi|zeta|omega|mu|nu|lambda|int)' "ln" rwA
-\\`!p snip.rv = match.group(1)`
 endsnippet
 
 
@@ -838,6 +923,16 @@ snippet sim "~" iA
 endsnippet
 
 context "math()"
+snippet equiv "equiv" iA
+\equiv 
+endsnippet
+
+context "math()"
+snippet mod "mod" iA
+\mod 
+endsnippet
+
+context "math()"
 snippet hom "homeo" iA
 \cong 
 endsnippet
@@ -852,10 +947,6 @@ snippet cc "subset" Ai
 \subseteq 
 endsnippet
 
-context "math()"
-snippet dd "supset" Ai
-\supseteq 
-endsnippet
 
 snippet NII "not in " iA
 \not\in 
@@ -877,9 +968,6 @@ snippet nnn "bigcap" iA
 \bigcap $0
 endsnippet
 
-snippet 00 "emptyset" iA
-\emptyset
-endsnippet
 
 
 snippet <! "normal" iA
@@ -896,10 +984,6 @@ snippet '(?<!i)sts' "text subscript" irA
 _\text{$1} $0
 endsnippet
 
-context "math()"
-snippet tt "text" iA
-\text{$1}$0
-endsnippet
 
 context "math()"
 snippet case "cases" wA
