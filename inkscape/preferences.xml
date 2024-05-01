@@ -33,7 +33,7 @@
        state="0" />
     <group
        id="scrollbars"
-       state="0" />
+       state="1" />
   </group>
   <group
      id="fullscreen">
@@ -126,8 +126,8 @@
          id="rect"
          style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.13385827;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;stop-color:#000000;stop-opacity:1"
          usecurrent="0"
-         width="27.3203668068713"
-         height="27.7808824674351"
+         width="51.7102279062347"
+         height="411.289860282358"
          ry="0"
          rx="0"
          convertguides="1" />
@@ -167,8 +167,8 @@
          end="0"
          start="0"
          usecurrent="1"
-         rx="1.31280516076277"
-         ry="1.31280516076275"
+         rx="0.426101684570312"
+         ry="0.426101684570312"
          arc_type="0" />
       <eventcontext
          id="star"
@@ -331,7 +331,7 @@
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
        show_sample_in_list="1"
        use_svg2="1"
-       style="line-height:1.25;font-family:Sans;font-size:13.33333333px;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none"
+       style="line-height:1.25;font-family:Sans;font-size:8px;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none"
        selcue="1"
        align_mode="1" />
     <eventcontext
@@ -349,8 +349,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="352.925537007874"
-       y="266.682368503936"
+       x="260.262840944882"
+       y="319.720013858268"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -417,12 +417,12 @@
        fontsize="10">
       <group
          id="measure-start"
-         x="143.704702500108"
-         y="149.740873826257" />
+         x="11.8298644832275"
+         y="10.8530578441487" />
       <group
          id="measure-end"
-         x="415.947424251969"
-         y="318.506547401575" />
+         x="12.3392410083001"
+         y="10.4065208270333" />
     </group>
     <eventcontext
        id="dropper"
@@ -647,7 +647,7 @@
        defaultopts="1">
       <group
          id="exportarea"
-         value="selection" />
+         value="drawing" />
       <group
          id="defaultxdpi" />
       <group
@@ -662,7 +662,7 @@
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/abel/Documents/Uni/Cuatri 4A/5. PEF1/Proyecto/figures"
+       path="/home/abel/Documents/Uni/Cuatri 4B/5. PEF2/Proyecto/figures"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -673,7 +673,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/abel/Pictures/Aceituna/cartas/" />
+       path="/home/abel/Downloads/" />
     <group
        id="import"
        enable_preview="1"
@@ -1077,10 +1077,10 @@
      org.inkscape.input.svg.scale="auto"
      org.inkscape.generate.pdf_latex.page="basic"
      org.inkscape.template.from-file.filename="/home/abel/.config/inkscape/templates/card buena.svg"
-     org.inkscape.generate.pdf_latex.formule="A5" />
+     org.inkscape.generate.pdf_latex.formule="$E_o$" />
   <group
      id="desktop"
-     style="font-size:120px;fill:#000003;stroke-width:1.13385827;text-anchor:middle;text-align:center;line-height:1.15;fill-rule:evenodd;-inkscape-font-specification:Impact;font-family:Impact;stroke-miterlimit:2;stroke:#000000;stroke-linecap:round;stroke-linejoin:round">
+     style="font-size:1.33333333px;fill:none;stroke-width:1.13385827;text-anchor:middle;text-align:center;line-height:1.15;fill-rule:evenodd;-inkscape-font-specification:Impact;font-family:Impact;stroke-miterlimit:2;stroke-linecap:round;stroke-linejoin:round;stroke:#000000">
     <group
        width="1906"
        height="1027"

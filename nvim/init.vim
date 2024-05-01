@@ -27,6 +27,8 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+let g:Tex_FormatDependency_dvi = 'dvi,ps,pdf'
+let g:Tex_DefaultTargetFormat = 'pdf'
 
 set conceallevel=1
 let g:tex_conceal='abdmg'

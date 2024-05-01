@@ -25,14 +25,17 @@ XF86AudioLowerVolume
 XF86AudioMute
 	amixer -D pulse set Master 1+ toggle
 
-XF86MonBrightnessUp
-	brightnessctl -d amdgpu_bl0 s '+5%'
+XF86MonBrightnessUp 
+	brightnessctl s +5% 
 
 XF86MonBrightnessDown 
-	brightnessctl -d amdgpu_bl0 s '5%-'
+	brightnessctl s 5%-
 
 super + XF86MonBrightnessDown 
-	brightnessctl -d amdgpu_bl0 s '0%'
+	brightnessctl s 0%
+
+super + XF86MonBrightnessDown 
+	brightnessctl s 1000%
 
 XF86AudioPlay
 	playerctl --player=spotify play-pause
@@ -77,7 +80,7 @@ control + alt + f
     kitty -e ranger ~/
 
 control + alt + u
-	kitty -e ranger ~/"Documents/Uni/Cuatri 4A"
+	kitty -e ranger ~/"Documents/Uni/Cuatri 4B"
 
 control + alt + i
 	kitty -e ranger ~/"Documents/Personal/Investigacion/Local Cohomology"

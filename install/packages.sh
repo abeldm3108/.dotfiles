@@ -28,6 +28,9 @@ SYSTEM_PAC=(
 	rclone
 	stalonetray
 	maim
+	xorg
+	xorg-xinput
+	xf86-input-libinput
 	xorg-xrandr
 	networkmanager-dmenu
 	xorg-setxkbmap	
@@ -47,6 +50,11 @@ SYSTEM_PAC=(
 	qalculate-gtk
 	xclip
 	bluez bluez-utils
+	ruby
+    brightnessctl
+	python-pynvim
+	texlive-latexrecommended
+	texlive-latexextra
 )
 
 
@@ -61,6 +69,7 @@ SYSTEM_AUR=(
 	python-xlib
 	syncthing
 	devour
+	blueman
 )
 
 PROG_PAC=(
@@ -72,15 +81,16 @@ PROG_PAC=(
     simplescreenrecorder
     pdfjam
     telegram-desktop
+	inkscape
 )
 
 PROG_AUR=(
-	whatsapp-nativefier
+	whatsdesk
 	todoist-nativefier
 	spotify spotify-adblock-git spicetify-themes-git spicetify-cli
 	google-calendar-nativefier
-	joplin-desktop
-	mailspring
+	thunderbird
+	dialect
 )
 
 function intro {

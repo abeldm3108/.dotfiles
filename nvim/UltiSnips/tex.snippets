@@ -57,6 +57,11 @@ snippet template "Basic template" b
 \newtheorem*{definition}{Definition}
 \newtheorem*{observation}{Observation}
 
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\coker}{Coker}
+\DeclareMathOperator{\coim}{Coim}
+
 \newcommand{\com}[1]{\textcolor{red}{#1}}
 \newcommand{\incfig}[1]{%
 \center
@@ -233,6 +238,12 @@ context "math()"
 priority 100
 snippet SS1 "S1" iA
 \mathbb{S}^1
+endsnippet
+
+context "math()"
+priority 100
+snippet PP "P" iA
+\mathbb{P}
 endsnippet
 
 context "math()"

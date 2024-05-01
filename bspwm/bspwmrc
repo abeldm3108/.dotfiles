@@ -36,7 +36,7 @@ bspc config pointer_action3 resize_corner
 
 bspc rule -a Zathura state=tiled
 bspc rule -a todoist-nativefier-409272 desktop='^4' follow=off
-bspc rule -a whatsapp-nativefier-d40211 desktop='^1' follow=off
+bspc rule -a whatsdesk desktop='^1' follow=off
 bspc rule -a TelegramDesktop desktop='^1' follow=off
 bspc rule -a spotify desktop='^2' follow=off
 
